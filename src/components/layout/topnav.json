@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_topnavs",
+  "info": {
+    "displayName": "topnav"
+  },
+  "options": {},
+  "attributes": {
+    "phoneLink": {
+      "displayName": "phoneLink",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.phone-link"
+    },
+    "emailLink": {
+      "displayName": "emailLink",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.email-link"
+    }
+  }
+}

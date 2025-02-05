@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_main_layout_main_top_navs",
+  "info": {
+    "displayName": "mainTopNav"
+  },
+  "options": {},
+  "attributes": {
+    "logoLink": {
+      "displayName": "logoLink",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.logo-link"
+    },
+    "navItems": {
+      "displayName": "navItems",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.nav-items"
+    },
+    "cta": {
+      "displayName": "cta",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.cta"
+    }
+  }
+}

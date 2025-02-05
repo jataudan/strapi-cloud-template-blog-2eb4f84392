@@ -20,7 +20,11 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "siteDescription": {
       "type": "text",
@@ -30,6 +34,18 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "topnav": {
+      "displayName": "topnav",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.topnav"
+    },
+    "mainTopNav": {
+      "displayName": "mainTopNav",
+      "type": "component",
+      "repeatable": false,
+      "component": "main-layout.main-top-nav"
     }
   }
 }
