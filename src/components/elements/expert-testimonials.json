@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_elements_expert_testimonials",
+  "info": {
+    "displayName": "Expert Testimonials",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "clientImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "count": {
+      "type": "string"
+    },
+    "quotes": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "p": {
+      "type": "text"
+    },
+    "client": {
+      "displayName": "client",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.client"
+    }
+  }
+}

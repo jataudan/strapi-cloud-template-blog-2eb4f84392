@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "landings",
+  "info": {
+    "singularName": "landing",
+    "pluralName": "landings",
+    "displayName": "Landing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.hero-section"
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.about-us"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.services"
+    },
+    "digital": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.digital-agency"
+    },
+    "studies": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.case-studies"
+    },
+    "offer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.special-offer"
+    },
+    "expert": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.our-expert-team"
+    }
+  }
+}

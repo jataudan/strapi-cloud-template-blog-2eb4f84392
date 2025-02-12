@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_landing_page_about_uses",
+  "info": {
+    "displayName": "about-us",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "leftImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "h2": {
+      "type": "string"
+    },
+    "p": {
+      "type": "text"
+    },
+    "campaigns": {
+      "type": "string"
+    },
+    "campaignsText": {
+      "type": "string"
+    },
+    "traffic": {
+      "type": "string"
+    },
+    "trafficText": {
+      "type": "string"
+    },
+    "aboutButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.email-link"
+    }
+  }
+}

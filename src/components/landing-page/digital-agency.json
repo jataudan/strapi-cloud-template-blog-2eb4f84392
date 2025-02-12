@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_landing_page_digital_agencies",
+  "info": {
+    "displayName": "Digital Agency"
+  },
+  "options": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "h2": {
+      "type": "string"
+    },
+    "p": {
+      "type": "text"
+    },
+    "detail": {
+      "displayName": "Detail",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.detail"
+    },
+    "started": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.email-link"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

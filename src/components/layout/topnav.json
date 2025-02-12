@@ -1,7 +1,8 @@
 {
   "collectionName": "components_layout_topnavs",
   "info": {
-    "displayName": "topnav"
+    "displayName": "topnav",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,6 +17,11 @@
       "type": "component",
       "repeatable": false,
       "component": "elements.email-link"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.phone-link"
     }
   }
 }

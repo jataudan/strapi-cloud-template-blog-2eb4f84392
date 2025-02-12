@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_landing_page_case_studies",
+  "info": {
+    "displayName": "Case Studies"
+  },
+  "options": {},
+  "attributes": {
+    "subTitle": {
+      "type": "string"
+    },
+    "h3": {
+      "type": "string"
+    },
+    "slider": {
+      "displayName": "Image Slider",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.image-slider"
+    }
+  }
+}

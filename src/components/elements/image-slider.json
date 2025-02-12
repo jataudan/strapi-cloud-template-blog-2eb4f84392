@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_image_sliders",
+  "info": {
+    "displayName": "Image Slider"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "p": {
+      "type": "text"
+    },
+    "outer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.email-link"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

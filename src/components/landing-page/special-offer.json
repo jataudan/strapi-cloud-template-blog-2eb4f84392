@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_landing_page_special_offers",
+  "info": {
+    "displayName": "Special Offer"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "parent": {
+      "displayName": "parent",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.parent"
+    }
+  }
+}
