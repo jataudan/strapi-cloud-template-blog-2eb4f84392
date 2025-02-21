@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_blog_grid_blog_grids",
+  "info": {
+    "displayName": "Blog Grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.about-us"
+    },
+    "Card": {
+      "displayName": "Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-grid.card"
+    },
+    "pagination": {
+      "displayName": "Pagination",
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-grid.pagination"
+    }
+  }
+}

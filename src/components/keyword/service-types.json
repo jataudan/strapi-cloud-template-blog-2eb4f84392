@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_keyword_service_types",
+  "info": {
+    "displayName": "Service Types"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "serviceName": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "highlighted": {
+      "type": "boolean"
+    }
+  }
+}

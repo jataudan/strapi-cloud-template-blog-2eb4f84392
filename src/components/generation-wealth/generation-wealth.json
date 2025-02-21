@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_generation_wealth_generation_wealths",
+  "info": {
+    "displayName": "Generation Wealth",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.about-us"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mainSection": {
+      "displayName": "Main Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "generation-wealth.main-section"
+    },
+    "sideSection": {
+      "displayName": "Side Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "generation-wealth.side-section"
+    },
+    "contact": {
+      "displayName": "contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "generation-wealth.contact"
+    },
+    "navigatePages": {
+      "displayName": "Navigation",
+      "type": "component",
+      "repeatable": true,
+      "component": "generation-wealth.navigation"
+    }
+  }
+}

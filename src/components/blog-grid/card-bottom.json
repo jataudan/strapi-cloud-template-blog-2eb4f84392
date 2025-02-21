@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_blog_grid_card_bottoms",
+  "info": {
+    "displayName": "Card Bottom",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "designation": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "clientImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "href": {
+      "type": "string"
+    },
+    "linkIcon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "iconColor": {
+      "type": "string"
+    }
+  }
+}

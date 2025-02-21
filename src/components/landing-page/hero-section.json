@@ -1,7 +1,8 @@
 {
   "collectionName": "components_landing_page_hero_sections",
   "info": {
-    "displayName": "hero-section"
+    "displayName": "hero-section",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,17 +13,20 @@
       "type": "text"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "socialLinks": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "elements.email-link"
+    },
+    "subh1": {
+      "type": "string"
     }
   }
 }

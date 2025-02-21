@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_keyword_opening_hours",
+  "info": {
+    "displayName": "Opening Hours"
+  },
+  "options": {},
+  "attributes": {
+    "days": {
+      "type": "string"
+    },
+    "hours": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

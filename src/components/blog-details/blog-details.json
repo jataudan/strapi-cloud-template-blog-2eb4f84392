@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blog_details_blog_details",
+  "info": {
+    "displayName": "Blog Details",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.about-us"
+    },
+    "post": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-standard.post"
+    },
+    "commentSection": {
+      "displayName": "Comment Section",
+      "type": "component",
+      "repeatable": true,
+      "component": "blog-details.comment-section"
+    }
+  }
+}

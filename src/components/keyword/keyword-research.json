@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_keyword_keyword_researches",
+  "info": {
+    "displayName": "Keyword Research",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.about-us"
+    },
+    "mainSection": {
+      "displayName": "MainSection",
+      "type": "component",
+      "repeatable": true,
+      "component": "keyword.main-section"
+    },
+    "mainSectionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

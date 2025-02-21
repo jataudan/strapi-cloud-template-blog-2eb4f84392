@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_generation_wealth_main_sections",
+  "info": {
+    "displayName": "Main Section"
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "p": {
+      "type": "text"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

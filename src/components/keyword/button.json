@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_keyword_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "Book Appointment Now"
+    },
+    "href": {
+      "type": "string"
+    },
+    "style": {
+      "type": "string"
+    }
+  }
+}

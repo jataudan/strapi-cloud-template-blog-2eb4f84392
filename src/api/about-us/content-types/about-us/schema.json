@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About Us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.about-us"
+    },
+    "digitalAgency": {
+      "type": "component",
+      "repeatable": false,
+      "component": "landing-page.digital-agency"
+    },
+    "workingProcess": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.working-process"
+    },
+    "chooseUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.choose-us"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.testimonials"
+    }
+  }
+}

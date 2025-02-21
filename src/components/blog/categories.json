@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_categories",
+  "info": {
+    "displayName": "categories",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "Digital",
+        "SEO",
+        "Marketing"
+      ]
+    },
+    "count": {
+      "type": "integer"
+    }
+  }
+}

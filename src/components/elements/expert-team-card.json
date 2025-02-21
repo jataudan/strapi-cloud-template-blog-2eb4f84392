@@ -1,23 +1,26 @@
 {
   "collectionName": "components_elements_expert_team_cards",
   "info": {
-    "displayName": "Expert Team Card"
+    "displayName": "Expert Team Card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "socialLinks": {
       "type": "component",
@@ -29,6 +32,9 @@
     },
     "designation": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_elements_email_links",
   "info": {
-    "displayName": "emailLink"
+    "displayName": "emailLink",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,11 +17,18 @@
       "default": false
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
     }
   }
 }

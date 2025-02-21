@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_us_benefits",
+  "info": {
+    "displayName": "benefits"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

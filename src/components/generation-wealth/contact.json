@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_generation_wealth_contacts",
+  "info": {
+    "displayName": "contact"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "phoneNumbers": {
+      "type": "string"
+    }
+  }
+}

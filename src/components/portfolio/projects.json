@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_portfolio_projects",
+  "info": {
+    "displayName": "projects"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

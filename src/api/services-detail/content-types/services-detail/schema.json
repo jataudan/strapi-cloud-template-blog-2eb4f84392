@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services_details",
+  "info": {
+    "singularName": "services-detail",
+    "pluralName": "services-details",
+    "displayName": "Services Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "servicesList": {
+      "type": "enumeration",
+      "enum": [
+        "web-development",
+        "video-production",
+        "seo",
+        "email-marketing",
+        "digital-strategy",
+        "brand-design"
+      ],
+      "default": "web-development"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "servicesImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contact": {
+      "displayName": "Contact Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "services.contact-details"
+    },
+    "questions": {
+      "displayName": "questions",
+      "type": "component",
+      "repeatable": true,
+      "component": "services.questions"
+    },
+    "openingHours": {
+      "displayName": "Opening Hours",
+      "type": "component",
+      "repeatable": true,
+      "component": "services.opening-hours"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "shortDescription": {
+      "type": "string"
+    }
+  }
+}

@@ -1,5 +1,339 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AboutUsAboutUs extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_about_uses';
+  info: {
+    description: '';
+    displayName: 'Hero';
+  };
+  attributes: {
+    color: Schema.Attribute.String;
+    h1: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface AboutUsBenefits extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_benefits';
+  info: {
+    displayName: 'benefits';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface AboutUsChooseUs extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_choose_uses';
+  info: {
+    description: '';
+    displayName: 'Choose Us';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    benefits: Schema.Attribute.Component<'about-us.benefits', true>;
+    color: Schema.Attribute.String;
+    contactInfo: Schema.Attribute.Component<'about-us.contact-info', false>;
+    h2: Schema.Attribute.String;
+    mainImage: Schema.Attribute.Media<'images'>;
+    paragraph: Schema.Attribute.Text;
+  };
+}
+
+export interface AboutUsContactInfo extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_contact_infos';
+  info: {
+    description: '';
+    displayName: 'Contact Info';
+  };
+  attributes: {
+    designation: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+    phoneNumber: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface AboutUsDigitalExpert extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_digital_experts';
+  info: {
+    description: '';
+    displayName: 'Digital Expert';
+  };
+  attributes: {
+    h2: Schema.Attribute.String;
+    subTag: Schema.Attribute.String;
+    teamMembers: Schema.Attribute.Component<'elements.expert-team-card', true>;
+    viewAllMembers: Schema.Attribute.Component<'elements.email-link', false>;
+  };
+}
+
+export interface AboutUsSection extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_sections';
+  info: {
+    description: '';
+    displayName: 'Milestones';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface AboutUsTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_testimonials';
+  info: {
+    description: '';
+    displayName: 'testimonials';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    card: Schema.Attribute.Component<'about-us.testimonials-card', true>;
+    h2: Schema.Attribute.String;
+    sideImage: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface AboutUsTestimonialsCard extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_testimonials_cards';
+  info: {
+    description: '';
+    displayName: 'Testimonials Card';
+  };
+  attributes: {
+    clientImage: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+    p: Schema.Attribute.Text;
+    quoteImage: Schema.Attribute.Media<'images'>;
+    role: Schema.Attribute.String;
+  };
+}
+
+export interface AboutUsWorkingProcess extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_working_processes';
+  info: {
+    description: '';
+    displayName: 'Working Process';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    color: Schema.Attribute.String;
+    h2: Schema.Attribute.String;
+    milestones: Schema.Attribute.Component<'about-us.section', true>;
+  };
+}
+
+export interface BlogDetailsBlogDetails extends Struct.ComponentSchema {
+  collectionName: 'components_blog_details_blog_details';
+  info: {
+    description: '';
+    displayName: 'Blog Details';
+  };
+  attributes: {
+    commentSection: Schema.Attribute.Component<
+      'blog-details.comment-section',
+      true
+    >;
+    hero: Schema.Attribute.Component<'about-us.about-us', false>;
+    post: Schema.Attribute.Component<'blog-standard.post', false>;
+  };
+}
+
+export interface BlogDetailsButton extends Struct.ComponentSchema {
+  collectionName: 'components_blog_details_buttons';
+  info: {
+    displayName: 'button';
+  };
+  attributes: {
+    x: Schema.Attribute.String;
+  };
+}
+
+export interface BlogDetailsCommentSection extends Struct.ComponentSchema {
+  collectionName: 'components_blog_details_comment_sections';
+  info: {
+    displayName: 'Comment Section';
+  };
+  attributes: {
+    dateTime: Schema.Attribute.DateTime;
+    image: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+    p: Schema.Attribute.Text;
+  };
+}
+
+export interface BlogGridBlogGrid extends Struct.ComponentSchema {
+  collectionName: 'components_blog_grid_blog_grids';
+  info: {
+    description: '';
+    displayName: 'Blog Grid';
+  };
+  attributes: {
+    Card: Schema.Attribute.Component<'blog-grid.card', true>;
+    hero: Schema.Attribute.Component<'about-us.about-us', false>;
+    pagination: Schema.Attribute.Component<'blog-grid.pagination', false>;
+  };
+}
+
+export interface BlogGridCard extends Struct.ComponentSchema {
+  collectionName: 'components_blog_grid_cards';
+  info: {
+    displayName: 'Card';
+  };
+  attributes: {
+    businessType: Schema.Attribute.String;
+    cardBottom: Schema.Attribute.Component<'blog-grid.card-bottom', false>;
+    date: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogGridCardBottom extends Struct.ComponentSchema {
+  collectionName: 'components_blog_grid_card_bottoms';
+  info: {
+    description: '';
+    displayName: 'Card Bottom';
+  };
+  attributes: {
+    clientImage: Schema.Attribute.Media<'images'>;
+    designation: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    iconColor: Schema.Attribute.String;
+    linkIcon: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface BlogGridPagination extends Struct.ComponentSchema {
+  collectionName: 'components_blog_grid_paginations';
+  info: {
+    displayName: 'Pagination';
+  };
+  attributes: {
+    arrowIcon: Schema.Attribute.Media<'images'>;
+    highlighted: Schema.Attribute.Boolean;
+    numbers: Schema.Attribute.Integer;
+  };
+}
+
+export interface BlogStandardAuthor extends Struct.ComponentSchema {
+  collectionName: 'components_blog_standard_authors';
+  info: {
+    displayName: 'author';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface BlogStandardButton extends Struct.ComponentSchema {
+  collectionName: 'components_blog_standard_buttons';
+  info: {
+    description: '';
+    displayName: 'button';
+  };
+  attributes: {
+    color: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    isExternal: Schema.Attribute.Boolean;
+    label: Schema.Attribute.String;
+  };
+}
+
+export interface BlogStandardPost extends Struct.ComponentSchema {
+  collectionName: 'components_blog_standard_posts';
+  info: {
+    description: '';
+    displayName: 'post';
+  };
+  attributes: {
+    author: Schema.Attribute.Component<'blog-standard.author', false>;
+    button: Schema.Attribute.Component<'blog-standard.button', false>;
+    date: Schema.Attribute.Date;
+    image: Schema.Attribute.Media<'images', true>;
+    p: Schema.Attribute.Text;
+    thumbnail: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogAuthor extends Struct.ComponentSchema {
+  collectionName: 'components_blog_authors';
+  info: {
+    description: '';
+    displayName: 'Author';
+  };
+  attributes: {
+    avatar: Schema.Attribute.Media<'images'>;
+    designation: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface BlogCategories extends Struct.ComponentSchema {
+  collectionName: 'components_blog_categories';
+  info: {
+    description: '';
+    displayName: 'categories';
+  };
+  attributes: {
+    count: Schema.Attribute.Integer;
+    name: Schema.Attribute.Enumeration<['Digital', 'SEO', 'Marketing']>;
+  };
+}
+
+export interface BlogComments extends Struct.ComponentSchema {
+  collectionName: 'components_blog_comments';
+  info: {
+    displayName: 'comments';
+  };
+  attributes: {
+    dateTime: Schema.Attribute.DateTime;
+    email: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    message: Schema.Attribute.RichText;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface BlogTags extends Struct.ComponentSchema {
+  collectionName: 'components_blog_tags';
+  info: {
+    description: '';
+    displayName: 'tags';
+  };
+  attributes: {
+    name: Schema.Attribute.Enumeration<
+      [
+        'Marketing',
+        'Agency',
+        'Influencer',
+        'Advertising',
+        'Development',
+        'Branding',
+      ]
+    >;
+  };
+}
+
+export interface ContactInfoContactInfo extends Struct.ComponentSchema {
+  collectionName: 'components_contact_info_contact_infos';
+  info: {
+    description: '';
+    displayName: 'Contact Info';
+  };
+  attributes: {
+    email: Schema.Attribute.Email;
+    location: Schema.Attribute.Text;
+    phoneNumber: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsCards extends Struct.ComponentSchema {
   collectionName: 'components_elements_cards';
   info: {
@@ -42,22 +376,27 @@ export interface ElementsDetail extends Struct.ComponentSchema {
 export interface ElementsEmailLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_email_links';
   info: {
+    description: '';
     displayName: 'emailLink';
   };
   attributes: {
+    height: Schema.Attribute.String;
     href: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     text: Schema.Attribute.String;
+    width: Schema.Attribute.String;
   };
 }
 
 export interface ElementsExpertTeamCard extends Struct.ComponentSchema {
   collectionName: 'components_elements_expert_team_cards';
   info: {
+    description: '';
     displayName: 'Expert Team Card';
   };
   attributes: {
+    description: Schema.Attribute.RichText;
     designation: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     logo: Schema.Attribute.Media<'images'>;
@@ -94,6 +433,19 @@ export interface ElementsImageSlider extends Struct.ComponentSchema {
     outer: Schema.Attribute.Component<'elements.email-link', false>;
     p: Schema.Attribute.Text;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsLink extends Struct.ComponentSchema {
+  collectionName: 'components_elements_links';
+  info: {
+    displayName: 'Link';
+  };
+  attributes: {
+    href: Schema.Attribute.String;
+    isExternal: Schema.Attribute.Boolean;
+    label: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['LINK', 'PRIMARY', 'SECONDARY']>;
   };
 }
 
@@ -145,6 +497,164 @@ export interface ElementsTestimonials extends Struct.ComponentSchema {
   };
 }
 
+export interface GenerationWealthContact extends Struct.ComponentSchema {
+  collectionName: 'components_generation_wealth_contacts';
+  info: {
+    displayName: 'contact';
+  };
+  attributes: {
+    color: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
+    phoneNumbers: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface GenerationWealthGenerationWealth
+  extends Struct.ComponentSchema {
+  collectionName: 'components_generation_wealth_generation_wealths';
+  info: {
+    description: '';
+    displayName: 'Generation Wealth';
+  };
+  attributes: {
+    contact: Schema.Attribute.Component<'generation-wealth.contact', false>;
+    hero: Schema.Attribute.Component<'about-us.about-us', false>;
+    mainImage: Schema.Attribute.Media<'images'>;
+    mainSection: Schema.Attribute.Component<
+      'generation-wealth.main-section',
+      false
+    >;
+    navigatePages: Schema.Attribute.Component<
+      'generation-wealth.navigation',
+      true
+    >;
+    sideSection: Schema.Attribute.Component<
+      'generation-wealth.side-section',
+      false
+    >;
+  };
+}
+
+export interface GenerationWealthMainSection extends Struct.ComponentSchema {
+  collectionName: 'components_generation_wealth_main_sections';
+  info: {
+    displayName: 'Main Section';
+  };
+  attributes: {
+    h2: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images', true>;
+    p: Schema.Attribute.Text;
+  };
+}
+
+export interface GenerationWealthNavigation extends Struct.ComponentSchema {
+  collectionName: 'components_generation_wealth_navigations';
+  info: {
+    displayName: 'Navigation';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface GenerationWealthSideSection extends Struct.ComponentSchema {
+  collectionName: 'components_generation_wealth_side_sections';
+  info: {
+    displayName: 'Side Section';
+  };
+  attributes: {
+    color: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    mainHeading: Schema.Attribute.String;
+    socialIcons: Schema.Attribute.Media<'images', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface KeywordButton extends Struct.ComponentSchema {
+  collectionName: 'components_keyword_buttons';
+  info: {
+    displayName: 'Button';
+  };
+  attributes: {
+    href: Schema.Attribute.String;
+    style: Schema.Attribute.String;
+    text: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Book Appointment Now'>;
+  };
+}
+
+export interface KeywordContact extends Struct.ComponentSchema {
+  collectionName: 'components_keyword_contacts';
+  info: {
+    description: '';
+    displayName: 'contact';
+  };
+  attributes: {
+    color: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
+    phoneNumbers: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface KeywordKeywordResearch extends Struct.ComponentSchema {
+  collectionName: 'components_keyword_keyword_researches';
+  info: {
+    description: '';
+    displayName: 'Keyword Research';
+  };
+  attributes: {
+    hero: Schema.Attribute.Component<'about-us.about-us', false>;
+    mainSection: Schema.Attribute.Component<'keyword.main-section', true>;
+    mainSectionImage: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface KeywordMainSection extends Struct.ComponentSchema {
+  collectionName: 'components_keyword_main_sections';
+  info: {
+    description: '';
+    displayName: 'MainSection';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'keyword.button', false>;
+    contact: Schema.Attribute.Component<'keyword.contact', false>;
+    h2: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images'>;
+    openingHours: Schema.Attribute.Component<'keyword.opening-hours', false>;
+    p: Schema.Attribute.Text;
+    serviceTypes: Schema.Attribute.Component<'keyword.service-types', true>;
+  };
+}
+
+export interface KeywordOpeningHours extends Struct.ComponentSchema {
+  collectionName: 'components_keyword_opening_hours';
+  info: {
+    displayName: 'Opening Hours';
+  };
+  attributes: {
+    days: Schema.Attribute.String;
+    hours: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface KeywordServiceTypes extends Struct.ComponentSchema {
+  collectionName: 'components_keyword_service_types';
+  info: {
+    displayName: 'Service Types';
+  };
+  attributes: {
+    highlighted: Schema.Attribute.Boolean;
+    href: Schema.Attribute.String;
+    serviceName: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface LandingPageAboutUs extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_about_uses';
   info: {
@@ -155,12 +665,29 @@ export interface LandingPageAboutUs extends Struct.ComponentSchema {
     aboutButton: Schema.Attribute.Component<'elements.email-link', false>;
     campaigns: Schema.Attribute.String;
     campaignsText: Schema.Attribute.String;
+    h1: Schema.Attribute.String;
     h2: Schema.Attribute.String;
+    h3: Schema.Attribute.String;
+    h4: Schema.Attribute.String;
     leftImage: Schema.Attribute.Media<'images', true>;
     p: Schema.Attribute.Text;
     subTitle: Schema.Attribute.String;
     traffic: Schema.Attribute.String;
     trafficText: Schema.Attribute.String;
+  };
+}
+
+export interface LandingPageBlog extends Struct.ComponentSchema {
+  collectionName: 'components_landing_page_blogs';
+  info: {
+    displayName: 'Blog';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    images: Schema.Attribute.Media<'images', true>;
+    tags: Schema.Attribute.Text;
+    thumbnailImage: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -179,11 +706,14 @@ export interface LandingPageCaseStudies extends Struct.ComponentSchema {
 export interface LandingPageDigitalAgency extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_digital_agencies';
   info: {
+    description: '';
     displayName: 'Digital Agency';
   };
   attributes: {
     detail: Schema.Attribute.Component<'elements.detail', true>;
+    h1: Schema.Attribute.String;
     h2: Schema.Attribute.String;
+    h3: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     p: Schema.Attribute.Text;
     started: Schema.Attribute.Component<'elements.email-link', false>;
@@ -194,13 +724,15 @@ export interface LandingPageDigitalAgency extends Struct.ComponentSchema {
 export interface LandingPageHeroSection extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_hero_sections';
   info: {
+    description: '';
     displayName: 'hero-section';
   };
   attributes: {
     h1: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     p: Schema.Attribute.Text;
-    socialLinks: Schema.Attribute.Component<'elements.email-link', false>;
+    socialLinks: Schema.Attribute.Component<'elements.email-link', true>;
+    subh1: Schema.Attribute.String;
   };
 }
 
@@ -295,6 +827,151 @@ export interface MainLayoutMainTopNav extends Struct.ComponentSchema {
   };
 }
 
+export interface PortfolioPortfolio extends Struct.ComponentSchema {
+  collectionName: 'components_portfolio_portfolios';
+  info: {
+    displayName: 'Portfolio';
+  };
+  attributes: {
+    hero: Schema.Attribute.Component<'about-us.about-us', false>;
+    projects: Schema.Attribute.Component<'portfolio.projects', true>;
+  };
+}
+
+export interface PortfolioProjectInformation extends Struct.ComponentSchema {
+  collectionName: 'components_portfolio_project_informations';
+  info: {
+    description: '';
+    displayName: 'project information';
+  };
+  attributes: {
+    budget: Schema.Attribute.Decimal;
+    category: Schema.Attribute.Enumeration<
+      [
+        'Building Constractions',
+        'Social Media Marketing',
+        'Email Marketing',
+        'Electrotherapy',
+        'Affiliate Marketing',
+      ]
+    >;
+    clientName: Schema.Attribute.String;
+    endDate: Schema.Attribute.Date;
+    startDate: Schema.Attribute.Date;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PortfolioProjects extends Struct.ComponentSchema {
+  collectionName: 'components_portfolio_projects';
+  info: {
+    displayName: 'projects';
+  };
+  attributes: {
+    color: Schema.Attribute.String;
+    field: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    img: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesClosedDays extends Struct.ComponentSchema {
+  collectionName: 'components_services_closed_days';
+  info: {
+    displayName: 'Closed Days';
+  };
+  attributes: {
+    day: Schema.Attribute.Enumeration<
+      [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ]
+    >;
+  };
+}
+
+export interface ServicesContactDetails extends Struct.ComponentSchema {
+  collectionName: 'components_services_contact_details';
+  info: {
+    displayName: 'Contact Details';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images'>;
+    phoneNumbers: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesOpeningHours extends Struct.ComponentSchema {
+  collectionName: 'components_services_opening_hours';
+  info: {
+    description: '';
+    displayName: 'Opening Hours';
+  };
+  attributes: {
+    closeDay: Schema.Attribute.String;
+    endDay: Schema.Attribute.String;
+    endTime: Schema.Attribute.Time;
+    startDay: Schema.Attribute.String;
+    startTime: Schema.Attribute.Time;
+  };
+}
+
+export interface ServicesQuestions extends Struct.ComponentSchema {
+  collectionName: 'components_services_questions';
+  info: {
+    description: '';
+    displayName: 'questions';
+  };
+  attributes: {
+    answer: Schema.Attribute.Text;
+    question: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesServiceList extends Struct.ComponentSchema {
+  collectionName: 'components_services_service_lists';
+  info: {
+    displayName: 'service list';
+  };
+  attributes: {
+    title: Schema.Attribute.Enumeration<
+      [
+        'SEO Link Building Optimization',
+        'Web Development',
+        'Digital Strategy',
+        'Brand Design Identity',
+        'Email Marketing',
+        'Video Production',
+      ]
+    >;
+  };
+}
+
+export interface ServicesTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_services_testimonials';
+  info: {
+    displayName: 'testimonials';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    clientImage: Schema.Attribute.Media<'images'>;
+    designation: Schema.Attribute.String;
+    h2: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    p: Schema.Attribute.String;
+    sideImage: Schema.Attribute.Media<'images'>;
+    starImage: Schema.Attribute.Media<'images'>;
+    subTag: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -356,9 +1033,89 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface TeamSkills extends Struct.ComponentSchema {
+  collectionName: 'components_team_skills';
+  info: {
+    displayName: 'skills';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    percentage: Schema.Attribute.Decimal;
+  };
+}
+
+export interface TeamSocials extends Struct.ComponentSchema {
+  collectionName: 'components_team_socials';
+  info: {
+    displayName: 'socials';
+  };
+  attributes: {
+    height: Schema.Attribute.Decimal;
+    hoverIcon: Schema.Attribute.Media<'images'>;
+    icon: Schema.Attribute.Media<'images'>;
+    isExternal: Schema.Attribute.Boolean;
+    link: Schema.Attribute.String;
+    width: Schema.Attribute.Decimal;
+  };
+}
+
+export interface TeamTeam extends Struct.ComponentSchema {
+  collectionName: 'components_team_teams';
+  info: {
+    description: '';
+    displayName: 'Team';
+  };
+  attributes: {
+    hero: Schema.Attribute.Component<'about-us.about-us', false>;
+    teamCard: Schema.Attribute.Component<'team.team-card', true>;
+    teamMemberDetail: Schema.Attribute.Component<
+      'elements.expert-team-card',
+      false
+    >;
+  };
+}
+
+export interface TeamTeamCard extends Struct.ComponentSchema {
+  collectionName: 'components_team_team_cards';
+  info: {
+    displayName: 'Team Card';
+  };
+  attributes: {
+    designation: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    memberImage: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+    socialIcons: Schema.Attribute.Media<'images', true>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'about-us.about-us': AboutUsAboutUs;
+      'about-us.benefits': AboutUsBenefits;
+      'about-us.choose-us': AboutUsChooseUs;
+      'about-us.contact-info': AboutUsContactInfo;
+      'about-us.digital-expert': AboutUsDigitalExpert;
+      'about-us.section': AboutUsSection;
+      'about-us.testimonials': AboutUsTestimonials;
+      'about-us.testimonials-card': AboutUsTestimonialsCard;
+      'about-us.working-process': AboutUsWorkingProcess;
+      'blog-details.blog-details': BlogDetailsBlogDetails;
+      'blog-details.button': BlogDetailsButton;
+      'blog-details.comment-section': BlogDetailsCommentSection;
+      'blog-grid.blog-grid': BlogGridBlogGrid;
+      'blog-grid.card': BlogGridCard;
+      'blog-grid.card-bottom': BlogGridCardBottom;
+      'blog-grid.pagination': BlogGridPagination;
+      'blog-standard.author': BlogStandardAuthor;
+      'blog-standard.button': BlogStandardButton;
+      'blog-standard.post': BlogStandardPost;
+      'blog.author': BlogAuthor;
+      'blog.categories': BlogCategories;
+      'blog.comments': BlogComments;
+      'blog.tags': BlogTags;
+      'contact-info.contact-info': ContactInfoContactInfo;
       'elements.cards': ElementsCards;
       'elements.client': ElementsClient;
       'elements.detail': ElementsDetail;
@@ -366,11 +1123,24 @@ declare module '@strapi/strapi' {
       'elements.expert-team-card': ElementsExpertTeamCard;
       'elements.expert-testimonials': ElementsExpertTestimonials;
       'elements.image-slider': ElementsImageSlider;
+      'elements.link': ElementsLink;
       'elements.logo-link': ElementsLogoLink;
       'elements.parent': ElementsParent;
       'elements.phone-link': ElementsPhoneLink;
       'elements.testimonials': ElementsTestimonials;
+      'generation-wealth.contact': GenerationWealthContact;
+      'generation-wealth.generation-wealth': GenerationWealthGenerationWealth;
+      'generation-wealth.main-section': GenerationWealthMainSection;
+      'generation-wealth.navigation': GenerationWealthNavigation;
+      'generation-wealth.side-section': GenerationWealthSideSection;
+      'keyword.button': KeywordButton;
+      'keyword.contact': KeywordContact;
+      'keyword.keyword-research': KeywordKeywordResearch;
+      'keyword.main-section': KeywordMainSection;
+      'keyword.opening-hours': KeywordOpeningHours;
+      'keyword.service-types': KeywordServiceTypes;
       'landing-page.about-us': LandingPageAboutUs;
+      'landing-page.blog': LandingPageBlog;
       'landing-page.case-studies': LandingPageCaseStudies;
       'landing-page.digital-agency': LandingPageDigitalAgency;
       'landing-page.hero-section': LandingPageHeroSection;
@@ -381,11 +1151,24 @@ declare module '@strapi/strapi' {
       'layout.nav-items': LayoutNavItems;
       'layout.topnav': LayoutTopnav;
       'main-layout.main-top-nav': MainLayoutMainTopNav;
+      'portfolio.portfolio': PortfolioPortfolio;
+      'portfolio.project-information': PortfolioProjectInformation;
+      'portfolio.projects': PortfolioProjects;
+      'services.closed-days': ServicesClosedDays;
+      'services.contact-details': ServicesContactDetails;
+      'services.opening-hours': ServicesOpeningHours;
+      'services.questions': ServicesQuestions;
+      'services.service-list': ServicesServiceList;
+      'services.testimonials': ServicesTestimonials;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'team.skills': TeamSkills;
+      'team.socials': TeamSocials;
+      'team.team': TeamTeam;
+      'team.team-card': TeamTeamCard;
     }
   }
 }

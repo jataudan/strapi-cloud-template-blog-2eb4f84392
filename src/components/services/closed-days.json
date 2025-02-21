@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_services_closed_days",
+  "info": {
+    "displayName": "Closed Days"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    }
+  }
+}

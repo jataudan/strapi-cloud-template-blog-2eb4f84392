@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_about_us_testimonials_cards",
+  "info": {
+    "displayName": "Testimonials Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "quoteImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "p": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "clientImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

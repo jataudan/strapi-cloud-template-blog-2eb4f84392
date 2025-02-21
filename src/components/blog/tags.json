@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_tags",
+  "info": {
+    "displayName": "tags",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "Marketing",
+        "Agency",
+        "Influencer",
+        "Advertising",
+        "Development",
+        "Branding"
+      ]
+    }
+  }
+}

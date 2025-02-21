@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_about_us_digital_experts",
+  "info": {
+    "displayName": "Digital Expert",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subTag": {
+      "type": "string"
+    },
+    "h2": {
+      "type": "string"
+    },
+    "viewAllMembers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.email-link"
+    },
+    "teamMembers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.expert-team-card"
+    }
+  }
+}

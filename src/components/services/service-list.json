@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_services_service_lists",
+  "info": {
+    "displayName": "service list"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "enumeration",
+      "enum": [
+        "SEO Link Building Optimization",
+        "Web Development",
+        "Digital Strategy",
+        "Brand Design Identity",
+        "Email Marketing",
+        "Video Production"
+      ]
+    }
+  }
+}

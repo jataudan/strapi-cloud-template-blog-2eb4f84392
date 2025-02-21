@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_team_skills",
+  "info": {
+    "displayName": "skills"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "percentage": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_team_teams",
+  "info": {
+    "displayName": "Team",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.about-us"
+    },
+    "teamCard": {
+      "displayName": "Team Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "team.team-card"
+    },
+    "teamMemberDetail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.expert-team-card"
+    }
+  }
+}

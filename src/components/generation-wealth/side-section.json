@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_generation_wealth_side_sections",
+  "info": {
+    "displayName": "Side Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "socialIcons": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "mainHeading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

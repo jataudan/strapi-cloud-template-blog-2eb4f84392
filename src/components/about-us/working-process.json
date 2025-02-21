@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_about_us_working_processes",
+  "info": {
+    "displayName": "Working Process",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "milestones": {
+      "displayName": "section",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.section"
+    },
+    "color": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blog_grid_cards",
+  "info": {
+    "displayName": "Card"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "date": {
+      "type": "string"
+    },
+    "businessType": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cardBottom": {
+      "displayName": "Card Bottom",
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-grid.card-bottom"
+    }
+  }
+}

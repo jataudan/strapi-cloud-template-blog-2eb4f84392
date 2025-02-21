@@ -17,7 +17,7 @@
     "subTitle": {
       "type": "string"
     },
-    "h2": {
+    "h1": {
       "type": "string"
     },
     "p": {
@@ -39,6 +39,15 @@
       "type": "component",
       "repeatable": false,
       "component": "elements.email-link"
+    },
+    "h2": {
+      "type": "string"
+    },
+    "h3": {
+      "type": "string"
+    },
+    "h4": {
+      "type": "string"
     }
   }
 }

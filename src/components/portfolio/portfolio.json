@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_portfolio_portfolios",
+  "info": {
+    "displayName": "Portfolio"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.about-us"
+    },
+    "projects": {
+      "displayName": "projects",
+      "type": "component",
+      "repeatable": true,
+      "component": "portfolio.projects"
+    }
+  }
+}

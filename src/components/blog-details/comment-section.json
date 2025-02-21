@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blog_details_comment_sections",
+  "info": {
+    "displayName": "Comment Section"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "dateTime": {
+      "type": "datetime"
+    },
+    "p": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

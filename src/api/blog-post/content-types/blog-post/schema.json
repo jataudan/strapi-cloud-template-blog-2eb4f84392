@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_posts",
+  "info": {
+    "singularName": "blog-post",
+    "pluralName": "blog-posts",
+    "displayName": "Blog Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "author": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog.author"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "blogImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.categories"
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "Marketing",
+        "Agency",
+        "Influencer",
+        "Advertising",
+        "Development",
+        "Branding"
+      ]
+    },
+    "blog_comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-comment.blog-comment",
+      "mappedBy": "blog_post"
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.comments"
+    }
+  }
+}

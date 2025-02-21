@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_keyword_main_sections",
+  "info": {
+    "displayName": "MainSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "h2": {
+      "type": "string"
+    },
+    "p": {
+      "type": "text"
+    },
+    "serviceTypes": {
+      "displayName": "Service Types",
+      "type": "component",
+      "repeatable": true,
+      "component": "keyword.service-types"
+    },
+    "openingHours": {
+      "displayName": "Opening Hours",
+      "type": "component",
+      "repeatable": false,
+      "component": "keyword.opening-hours"
+    },
+    "button": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": false,
+      "component": "keyword.button"
+    },
+    "contact": {
+      "displayName": "contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "keyword.contact"
+    }
+  }
+}

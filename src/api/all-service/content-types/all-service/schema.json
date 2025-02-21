@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_services",
+  "info": {
+    "singularName": "all-service",
+    "pluralName": "all-services",
+    "displayName": "All Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "serviceList": {
+      "displayName": "service list",
+      "type": "component",
+      "repeatable": true,
+      "component": "services.service-list"
+    }
+  }
+}

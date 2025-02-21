@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_services_contact_details",
+  "info": {
+    "displayName": "Contact Details"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "phoneNumbers": {
+      "type": "string"
+    }
+  }
+}

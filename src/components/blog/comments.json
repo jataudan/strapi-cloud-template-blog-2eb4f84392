@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blog_comments",
+  "info": {
+    "displayName": "comments"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "dateTime": {
+      "type": "datetime"
+    }
+  }
+}

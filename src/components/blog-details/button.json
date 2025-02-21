@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blog_details_buttons",
+  "info": {
+    "displayName": "button"
+  },
+  "options": {},
+  "attributes": {
+    "x": {
+      "type": "string"
+    }
+  }
+}

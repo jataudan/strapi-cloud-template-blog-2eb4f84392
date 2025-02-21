@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_details",
+  "info": {
+    "singularName": "project-detail",
+    "pluralName": "project-details",
+    "displayName": "Project Detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "projectInfo": {
+      "displayName": "project information",
+      "type": "component",
+      "repeatable": false,
+      "component": "portfolio.project-information"
+    },
+    "projectImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "tag": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog.tags"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services.contact-details"
+    }
+  }
+}

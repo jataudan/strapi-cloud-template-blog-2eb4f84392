@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_portfolio_project_informations",
+  "info": {
+    "displayName": "project information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "budget": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Building Constractions",
+        "Social Media Marketing",
+        "Email Marketing",
+        "Electrotherapy",
+        "Affiliate Marketing"
+      ]
+    },
+    "clientName": {
+      "type": "string"
+    }
+  }
+}

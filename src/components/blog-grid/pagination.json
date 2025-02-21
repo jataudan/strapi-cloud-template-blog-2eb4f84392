@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_grid_paginations",
+  "info": {
+    "displayName": "Pagination"
+  },
+  "options": {},
+  "attributes": {
+    "numbers": {
+      "type": "integer"
+    },
+    "highlighted": {
+      "type": "boolean"
+    },
+    "arrowIcon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

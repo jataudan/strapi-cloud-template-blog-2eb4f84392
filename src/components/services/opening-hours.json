@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_services_opening_hours",
+  "info": {
+    "displayName": "Opening Hours",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "endTime": {
+      "type": "time"
+    },
+    "startDay": {
+      "type": "string"
+    },
+    "endDay": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "closeDay": {
+      "type": "string"
+    }
+  }
+}

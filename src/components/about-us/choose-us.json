@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_about_us_choose_uses",
+  "info": {
+    "displayName": "Choose Us",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "benefits": {
+      "displayName": "benefits",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.benefits"
+    },
+    "contactInfo": {
+      "displayName": "Contact Info",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.contact-info"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "color": {
+      "type": "string"
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

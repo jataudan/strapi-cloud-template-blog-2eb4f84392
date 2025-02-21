@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_about_us_testimonials",
+  "info": {
+    "displayName": "testimonials",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "sideImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "card": {
+      "displayName": "Testimonials Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.testimonials-card"
+    }
+  }
+}

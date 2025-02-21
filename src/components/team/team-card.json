@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_team_team_cards",
+  "info": {
+    "displayName": "Team Card"
+  },
+  "options": {},
+  "attributes": {
+    "memberImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "socialIcons": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

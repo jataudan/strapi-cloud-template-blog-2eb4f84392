@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_standard_buttons",
+  "info": {
+    "displayName": "button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean"
+    },
+    "color": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}
