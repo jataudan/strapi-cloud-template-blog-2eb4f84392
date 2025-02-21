@@ -979,9 +979,7 @@ export interface SharedMedia extends Struct.ComponentSchema {
     displayName: 'Media';
     icon: 'file-video';
   };
-  attributes: {
-    h1: Schema.Attribute.String;
-  };
+  attributes: {};
 }
 
 export interface SharedQuote extends Struct.ComponentSchema {

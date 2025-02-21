@@ -6,9 +6,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "h1": {
-      "type": "string"
-    }
-  }
+  "attributes": {}
 }
