@@ -1,16 +1,18 @@
 {
   "collectionName": "components_elements_clients",
   "info": {
-    "displayName": "client"
+    "displayName": "client",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "name": {
       "type": "string"

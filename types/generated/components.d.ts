@@ -351,11 +351,12 @@ export interface ElementsCards extends Struct.ComponentSchema {
 export interface ElementsClient extends Struct.ComponentSchema {
   collectionName: 'components_elements_clients';
   info: {
+    description: '';
     displayName: 'client';
   };
   attributes: {
     designation: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images', true>;
+    image: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String;
   };
 }
@@ -413,13 +414,8 @@ export interface ElementsExpertTestimonials extends Struct.ComponentSchema {
   };
   attributes: {
     client: Schema.Attribute.Component<'elements.client', false>;
-    clientImages: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
-    count: Schema.Attribute.String;
     p: Schema.Attribute.Text;
-    quotes: Schema.Attribute.Media<'images'>;
+    quoteImage: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -461,12 +457,13 @@ export interface ElementsLogoLink extends Struct.ComponentSchema {
 export interface ElementsParent extends Struct.ComponentSchema {
   collectionName: 'components_elements_parents';
   info: {
+    description: '';
     displayName: 'parent';
   };
   attributes: {
     h2: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
-    started: Schema.Attribute.Component<'elements.email-link', false>;
+    h3: Schema.Attribute.String;
+    h4: Schema.Attribute.String;
     subTitle: Schema.Attribute.String;
   };
 }
@@ -662,14 +659,11 @@ export interface LandingPageAboutUs extends Struct.ComponentSchema {
     displayName: 'about-us';
   };
   attributes: {
-    aboutButton: Schema.Attribute.Component<'elements.email-link', false>;
     campaigns: Schema.Attribute.String;
     campaignsText: Schema.Attribute.String;
     h1: Schema.Attribute.String;
     h2: Schema.Attribute.String;
-    h3: Schema.Attribute.String;
-    h4: Schema.Attribute.String;
-    leftImage: Schema.Attribute.Media<'images', true>;
+    leftImage: Schema.Attribute.Media<'images'>;
     p: Schema.Attribute.Text;
     subTitle: Schema.Attribute.String;
     traffic: Schema.Attribute.String;
@@ -694,11 +688,11 @@ export interface LandingPageBlog extends Struct.ComponentSchema {
 export interface LandingPageCaseStudies extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_case_studies';
   info: {
+    description: '';
     displayName: 'Case Studies';
   };
   attributes: {
-    h3: Schema.Attribute.String;
-    slider: Schema.Attribute.Component<'elements.image-slider', true>;
+    h2: Schema.Attribute.String;
     subTitle: Schema.Attribute.String;
   };
 }
@@ -716,7 +710,6 @@ export interface LandingPageDigitalAgency extends Struct.ComponentSchema {
     h3: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     p: Schema.Attribute.Text;
-    started: Schema.Attribute.Component<'elements.email-link', false>;
     subTitle: Schema.Attribute.String;
   };
 }
@@ -743,9 +736,11 @@ export interface LandingPageOurExpertTeam extends Struct.ComponentSchema {
     displayName: 'Our Expert Team';
   };
   attributes: {
-    expert: Schema.Attribute.Component<'elements.expert-team-card', true>;
-    h2: Schema.Attribute.String;
-    subTitle: Schema.Attribute.String;
+    clientImages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    count: Schema.Attribute.String;
     testimonials: Schema.Attribute.Component<
       'elements.expert-testimonials',
       true
@@ -760,7 +755,6 @@ export interface LandingPageServices extends Struct.ComponentSchema {
     displayName: 'Services';
   };
   attributes: {
-    Cards: Schema.Attribute.Component<'elements.cards', true>;
     testimonials: Schema.Attribute.Component<'elements.testimonials', false>;
   };
 }

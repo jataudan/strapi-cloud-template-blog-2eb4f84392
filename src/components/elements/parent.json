@@ -1,27 +1,22 @@
 {
   "collectionName": "components_elements_parents",
   "info": {
-    "displayName": "parent"
+    "displayName": "parent",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "subTitle": {
       "type": "string"
     },
     "h2": {
       "type": "string"
     },
-    "started": {
-      "type": "component",
-      "repeatable": false,
-      "component": "elements.email-link"
+    "h3": {
+      "type": "string"
+    },
+    "h4": {
+      "type": "string"
     }
   }
 }

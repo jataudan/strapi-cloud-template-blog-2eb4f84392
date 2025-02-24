@@ -8,7 +8,7 @@
   "attributes": {
     "leftImage": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
@@ -35,18 +35,7 @@
     "trafficText": {
       "type": "string"
     },
-    "aboutButton": {
-      "type": "component",
-      "repeatable": false,
-      "component": "elements.email-link"
-    },
     "h2": {
-      "type": "string"
-    },
-    "h3": {
-      "type": "string"
-    },
-    "h4": {
       "type": "string"
     }
   }

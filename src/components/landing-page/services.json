@@ -6,12 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "Cards": {
-      "displayName": "Cards",
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.cards"
-    },
     "testimonials": {
       "displayName": "Testimonials",
       "type": "component",

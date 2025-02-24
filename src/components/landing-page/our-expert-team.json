@@ -6,23 +6,24 @@
   },
   "options": {},
   "attributes": {
-    "subTitle": {
-      "type": "string"
-    },
-    "h2": {
-      "type": "string"
-    },
-    "expert": {
-      "displayName": "Expert Team Card",
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.expert-team-card"
-    },
     "testimonials": {
       "displayName": "Expert Testimonials",
       "type": "component",
       "repeatable": true,
       "component": "elements.expert-testimonials"
+    },
+    "clientImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "count": {
+      "type": "string"
     }
   }
 }
