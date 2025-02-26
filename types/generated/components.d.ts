@@ -451,7 +451,9 @@ export interface ElementsLogoLink extends Struct.ComponentSchema {
     description: '';
     displayName: 'logoLink';
   };
-  attributes: {};
+  attributes: {
+    logo: Schema.Attribute.Media<'images'>;
+  };
 }
 
 export interface ElementsParent extends Struct.ComponentSchema {
@@ -471,13 +473,16 @@ export interface ElementsParent extends Struct.ComponentSchema {
 export interface ElementsPhoneLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_phone_links';
   info: {
+    description: '';
     displayName: 'phoneLink';
   };
   attributes: {
+    height: Schema.Attribute.String;
     href: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     text: Schema.Attribute.String;
+    width: Schema.Attribute.String;
   };
 }
 
