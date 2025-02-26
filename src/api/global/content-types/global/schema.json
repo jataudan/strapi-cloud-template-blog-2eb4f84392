@@ -46,11 +46,6 @@
       "type": "component",
       "repeatable": false,
       "component": "main-layout.main-top-nav"
-    },
-    "blog": {
-      "type": "component",
-      "repeatable": true,
-      "component": "landing-page.blog"
     }
   }
 }
