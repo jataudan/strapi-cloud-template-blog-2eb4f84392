@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_settings",
+  "info": {
+    "singularName": "global-setting",
+    "pluralName": "global-settings",
+    "displayName": "global-setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "colorScheme": {
+      "displayName": "Color Scheme",
+      "type": "component",
+      "repeatable": true,
+      "component": "main-layout.color-scheme"
+    },
+    "fontFamily": {
+      "type": "string"
+    }
+  }
+}

@@ -832,6 +832,36 @@ export interface ApiGenerationWealthGenerationWealth
   };
 }
 
+export interface ApiGlobalSettingGlobalSetting extends Struct.SingleTypeSchema {
+  collectionName: 'global_settings';
+  info: {
+    description: '';
+    displayName: 'global-setting';
+    pluralName: 'global-settings';
+    singularName: 'global-setting';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    colorScheme: Schema.Attribute.Component<'main-layout.color-scheme', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    fontFamily: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::global-setting.global-setting'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -1679,6 +1709,7 @@ declare module '@strapi/strapi' {
       'api::contact-us.contact-us': ApiContactUsContactUs;
       'api::faq.faq': ApiFaqFaq;
       'api::generation-wealth.generation-wealth': ApiGenerationWealthGenerationWealth;
+      'api::global-setting.global-setting': ApiGlobalSettingGlobalSetting;
       'api::global.global': ApiGlobalGlobal;
       'api::hero-section.hero-section': ApiHeroSectionHeroSection;
       'api::keyword-research.keyword-research': ApiKeywordResearchKeywordResearch;

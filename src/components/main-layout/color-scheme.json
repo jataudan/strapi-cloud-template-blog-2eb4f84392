@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_main_layout_color_schemes",
+  "info": {
+    "displayName": "Color Scheme",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "colorList": {
+      "displayName": "Colors",
+      "type": "component",
+      "repeatable": true,
+      "component": "main-layout.colors"
+    },
+    "variantName": {
+      "type": "string"
+    }
+  }
+}
