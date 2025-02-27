@@ -46,6 +46,12 @@
       "type": "component",
       "repeatable": false,
       "component": "main-layout.main-top-nav"
+    },
+    "footer": {
+      "displayName": "footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "main-layout.footer"
     }
   }
 }

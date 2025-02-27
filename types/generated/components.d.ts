@@ -814,6 +814,22 @@ export interface LayoutTopnav extends Struct.ComponentSchema {
   };
 }
 
+export interface MainLayoutFooter extends Struct.ComponentSchema {
+  collectionName: 'components_main_layout_footers';
+  info: {
+    displayName: 'footer';
+  };
+  attributes: {
+    bgImage: Schema.Attribute.Media<'images', true>;
+    color: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    footerBottomLeftText: Schema.Attribute.String;
+    logo: Schema.Attribute.Media<'images', true>;
+    logoText: Schema.Attribute.String;
+    socialLinks: Schema.Attribute.Component<'elements.phone-link', true>;
+  };
+}
+
 export interface MainLayoutMainTopNav extends Struct.ComponentSchema {
   collectionName: 'components_main_layout_main_top_navs';
   info: {
@@ -1149,6 +1165,7 @@ declare module '@strapi/strapi' {
       'layout.cta': LayoutCta;
       'layout.nav-items': LayoutNavItems;
       'layout.topnav': LayoutTopnav;
+      'main-layout.footer': MainLayoutFooter;
       'main-layout.main-top-nav': MainLayoutMainTopNav;
       'portfolio.portfolio': PortfolioPortfolio;
       'portfolio.project-information': PortfolioProjectInformation;
