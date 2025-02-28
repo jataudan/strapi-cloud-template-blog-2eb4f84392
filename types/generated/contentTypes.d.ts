@@ -845,11 +845,14 @@ export interface ApiGlobalSettingGlobalSetting extends Struct.SingleTypeSchema {
   };
   attributes: {
     background: Schema.Attribute.String;
+    blogDescription: Schema.Attribute.String;
     colorScheme: Schema.Attribute.Component<'main-layout.color-scheme', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     fontFamily: Schema.Attribute.String;
+    fontSubType: Schema.Attribute.String;
+    fontType: Schema.Attribute.String;
     foreground: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

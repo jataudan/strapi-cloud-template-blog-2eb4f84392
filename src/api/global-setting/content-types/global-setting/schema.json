@@ -32,6 +32,15 @@
     },
     "foreground": {
       "type": "string"
+    },
+    "fontType": {
+      "type": "string"
+    },
+    "fontSubType": {
+      "type": "string"
+    },
+    "blogDescription": {
+      "type": "string"
     }
   }
 }
