@@ -93,6 +93,8 @@ export interface AboutUsTestimonials extends Struct.ComponentSchema {
     backgroundImage: Schema.Attribute.Media<'images'>;
     card: Schema.Attribute.Component<'about-us.testimonials-card', true>;
     h2: Schema.Attribute.String;
+    h3: Schema.Attribute.String;
+    h4: Schema.Attribute.String;
     sideImage: Schema.Attribute.Media<'images'>;
   };
 }
@@ -668,6 +670,7 @@ export interface LandingPageAboutUs extends Struct.ComponentSchema {
     campaignsText: Schema.Attribute.String;
     h1: Schema.Attribute.String;
     h2: Schema.Attribute.String;
+    h3: Schema.Attribute.String;
     leftImage: Schema.Attribute.Media<'images'>;
     p: Schema.Attribute.Text;
     subTitle: Schema.Attribute.String;

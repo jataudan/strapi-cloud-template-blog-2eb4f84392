@@ -37,6 +37,9 @@
     },
     "h2": {
       "type": "string"
+    },
+    "h3": {
+      "type": "string"
     }
   }
 }
