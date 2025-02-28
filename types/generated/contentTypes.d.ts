@@ -844,18 +844,22 @@ export interface ApiGlobalSettingGlobalSetting extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    background: Schema.Attribute.String;
     colorScheme: Schema.Attribute.Component<'main-layout.color-scheme', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     fontFamily: Schema.Attribute.String;
+    foreground: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::global-setting.global-setting'
     > &
       Schema.Attribute.Private;
+    primary: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    secondary: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

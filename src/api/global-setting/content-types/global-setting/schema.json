@@ -20,6 +20,18 @@
     },
     "fontFamily": {
       "type": "string"
+    },
+    "primary": {
+      "type": "string"
+    },
+    "secondary": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "foreground": {
+      "type": "string"
     }
   }
 }
