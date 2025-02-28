@@ -18,9 +18,6 @@
       "repeatable": true,
       "component": "main-layout.color-scheme"
     },
-    "fontFamily": {
-      "type": "string"
-    },
     "primary": {
       "type": "string"
     },
@@ -33,14 +30,14 @@
     "foreground": {
       "type": "string"
     },
-    "fontType": {
-      "type": "string"
-    },
-    "fontSubType": {
-      "type": "string"
-    },
     "blogDescription": {
       "type": "string"
+    },
+    "fontsFamily": {
+      "displayName": "Font Family",
+      "type": "component",
+      "repeatable": true,
+      "component": "main-layout.font-family"
     }
   }
 }

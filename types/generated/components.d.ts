@@ -837,6 +837,18 @@ export interface MainLayoutColors extends Struct.ComponentSchema {
   };
 }
 
+export interface MainLayoutFontFamily extends Struct.ComponentSchema {
+  collectionName: 'components_main_layout_font_families';
+  info: {
+    displayName: 'Font Family';
+  };
+  attributes: {
+    fontFamily: Schema.Attribute.String;
+    fontSubType: Schema.Attribute.String;
+    fontType: Schema.Attribute.String;
+  };
+}
+
 export interface MainLayoutFooter extends Struct.ComponentSchema {
   collectionName: 'components_main_layout_footers';
   info: {
@@ -1190,6 +1202,7 @@ declare module '@strapi/strapi' {
       'layout.topnav': LayoutTopnav;
       'main-layout.color-scheme': MainLayoutColorScheme;
       'main-layout.colors': MainLayoutColors;
+      'main-layout.font-family': MainLayoutFontFamily;
       'main-layout.footer': MainLayoutFooter;
       'main-layout.main-top-nav': MainLayoutMainTopNav;
       'portfolio.portfolio': PortfolioPortfolio;

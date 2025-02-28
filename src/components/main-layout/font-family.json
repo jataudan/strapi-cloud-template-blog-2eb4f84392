@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_main_layout_font_families",
+  "info": {
+    "displayName": "Font Family"
+  },
+  "options": {},
+  "attributes": {
+    "fontFamily": {
+      "type": "string"
+    },
+    "fontType": {
+      "type": "string"
+    },
+    "fontSubType": {
+      "type": "string"
+    }
+  }
+}
