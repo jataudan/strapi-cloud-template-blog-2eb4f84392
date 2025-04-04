@@ -6,10 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "primaryHeading": {
+    "h1": {
       "type": "string"
     },
-    "paragraph": {
+    "p": {
       "type": "text"
     },
     "image": {
@@ -25,7 +25,7 @@
       "repeatable": true,
       "component": "elements.email-link"
     },
-    "secondaryHeading": {
+    "subh1": {
       "type": "string"
     }
   }

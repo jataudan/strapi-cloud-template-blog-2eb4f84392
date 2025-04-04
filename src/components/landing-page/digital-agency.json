@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "subTitle": {
       "type": "string"
     },
-    "prefix": {
+    "h1": {
       "type": "string"
     },
-    "paragraph": {
+    "p": {
       "type": "text"
     },
     "detail": {
@@ -29,10 +29,10 @@
         "images"
       ]
     },
-    "highlighted": {
+    "h2": {
       "type": "string"
     },
-    "suffix": {
+    "h3": {
       "type": "string"
     }
   }

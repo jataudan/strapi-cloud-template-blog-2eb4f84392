@@ -46,6 +46,11 @@
       "type": "component",
       "repeatable": false,
       "component": "landing-page.our-expert-team"
+    },
+    "blog": {
+      "type": "component",
+      "repeatable": true,
+      "component": "landing-page.blog"
     }
   }
 }

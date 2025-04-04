@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "h2": {
       "type": "string"
     },
     "sideImage": {
@@ -31,13 +31,10 @@
       "repeatable": true,
       "component": "about-us.testimonials-card"
     },
-    "heading": {
+    "h3": {
       "type": "string"
     },
-    "boldHeading": {
-      "type": "string"
-    },
-    "highlighted": {
+    "h4": {
       "type": "string"
     }
   }

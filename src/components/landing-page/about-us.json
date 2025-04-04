@@ -14,13 +14,13 @@
         "images"
       ]
     },
-    "prefix": {
+    "subTitle": {
       "type": "string"
     },
-    "primaryHighlighted": {
+    "h1": {
       "type": "string"
     },
-    "paragraph": {
+    "p": {
       "type": "text"
     },
     "campaigns": {
@@ -35,13 +35,10 @@
     "trafficText": {
       "type": "string"
     },
-    "suffix": {
+    "h2": {
       "type": "string"
     },
-    "title": {
-      "type": "string"
-    },
-    "secondaryHighlighted": {
+    "h3": {
       "type": "string"
     }
   }

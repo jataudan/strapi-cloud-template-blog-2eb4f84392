@@ -6,10 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "subTitle": {
       "type": "string"
     },
-    "heading": {
+    "h2": {
       "type": "string"
     }
   }

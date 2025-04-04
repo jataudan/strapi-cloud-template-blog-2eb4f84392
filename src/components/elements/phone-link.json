@@ -1,7 +1,8 @@
 {
   "collectionName": "components_elements_phone_links",
   "info": {
-    "displayName": "phoneLink"
+    "displayName": "phoneLink",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,11 +17,18 @@
       "default": false
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
     }
   }
 }

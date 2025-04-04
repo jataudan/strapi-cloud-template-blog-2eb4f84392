@@ -6,16 +6,16 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "subTitle": {
       "type": "string"
     },
-    "prefix": {
+    "h2": {
       "type": "string"
     },
-    "highlighted": {
+    "h3": {
       "type": "string"
     },
-    "suffix": {
+    "h4": {
       "type": "string"
     }
   }
