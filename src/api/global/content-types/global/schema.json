@@ -47,10 +47,11 @@
       "repeatable": false,
       "component": "main-layout.main-top-nav"
     },
-    "blog": {
+    "footer": {
+      "displayName": "footer",
       "type": "component",
-      "repeatable": true,
-      "component": "landing-page.blog"
+      "repeatable": false,
+      "component": "main-layout.footer"
     }
   }
 }
