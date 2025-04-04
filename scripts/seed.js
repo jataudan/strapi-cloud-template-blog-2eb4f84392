@@ -3,6 +3,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const mime = require('mime-types');
+// @ts-ignore
 const { categories, authors, articles, global, about } = require('../data/data.json');
 
 async function seedExampleApp() {
