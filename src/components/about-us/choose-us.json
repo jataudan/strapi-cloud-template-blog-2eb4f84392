@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "h2": {
+    "heading": {
       "type": "string"
     },
     "paragraph": {
@@ -42,6 +42,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
-    "subTitle": {
+    "title": {
       "type": "string"
     },
-    "h1": {
+    "prefix": {
       "type": "string"
     },
-    "p": {
+    "paragraph": {
       "type": "text"
     },
     "detail": {
@@ -21,7 +21,7 @@
       "repeatable": true,
       "component": "elements.detail"
     },
-    "image": {
+    "image553x534": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -29,10 +29,10 @@
         "images"
       ]
     },
-    "h2": {
+    "highlighted": {
       "type": "string"
     },
-    "h3": {
+    "suffix": {
       "type": "string"
     }
   }

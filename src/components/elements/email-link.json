@@ -16,7 +16,7 @@
       "type": "boolean",
       "default": false
     },
-    "image": {
+    "image17x17": {
       "type": "media",
       "multiple": false,
       "required": false,

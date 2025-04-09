@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
-    "h1": {
+    "primaryHeading": {
       "type": "string"
     },
-    "p": {
+    "paragraph": {
       "type": "text"
     },
-    "image": {
+    "image1920x1000": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -25,7 +25,7 @@
       "repeatable": true,
       "component": "elements.email-link"
     },
-    "subh1": {
+    "secondaryHeading": {
       "type": "string"
     }
   }

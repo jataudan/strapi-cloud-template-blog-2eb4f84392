@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "quoteImage": {
+    "quoteImage40x40": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -14,7 +14,7 @@
         "images"
       ]
     },
-    "p": {
+    "paragraph": {
       "type": "text"
     },
     "client": {

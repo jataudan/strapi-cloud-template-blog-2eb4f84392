@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "h2": {
+    "title": {
       "type": "string"
     },
     "milestones": {
@@ -25,6 +25,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "heading": {
+      "type": "string"
     }
   }
 }

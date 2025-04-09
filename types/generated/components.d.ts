@@ -8,8 +8,8 @@ export interface AboutUsAboutUs extends Struct.ComponentSchema {
   };
   attributes: {
     color: Schema.Attribute.String;
-    h1: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
+    image1920x1080: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -35,9 +35,10 @@ export interface AboutUsChooseUs extends Struct.ComponentSchema {
     benefits: Schema.Attribute.Component<'about-us.benefits', true>;
     color: Schema.Attribute.String;
     contactInfo: Schema.Attribute.Component<'about-us.contact-info', false>;
-    h2: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
     mainImage: Schema.Attribute.Media<'images'>;
     paragraph: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -91,11 +92,12 @@ export interface AboutUsTestimonials extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
+    boldHeading: Schema.Attribute.String;
     card: Schema.Attribute.Component<'about-us.testimonials-card', true>;
-    h2: Schema.Attribute.String;
-    h3: Schema.Attribute.String;
-    h4: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    highlighted: Schema.Attribute.String;
     sideImage: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -107,8 +109,8 @@ export interface AboutUsTestimonialsCard extends Struct.ComponentSchema {
   };
   attributes: {
     clientImage: Schema.Attribute.Media<'images'>;
+    comments: Schema.Attribute.Text;
     name: Schema.Attribute.String;
-    p: Schema.Attribute.Text;
     quoteImage: Schema.Attribute.Media<'images'>;
     role: Schema.Attribute.String;
   };
@@ -123,8 +125,9 @@ export interface AboutUsWorkingProcess extends Struct.ComponentSchema {
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
     color: Schema.Attribute.String;
-    h2: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
     milestones: Schema.Attribute.Component<'about-us.section', true>;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -358,7 +361,7 @@ export interface ElementsClient extends Struct.ComponentSchema {
   };
   attributes: {
     designation: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
+    image70x70: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String;
   };
 }
@@ -370,7 +373,7 @@ export interface ElementsDetail extends Struct.ComponentSchema {
     displayName: 'Detail';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images'>;
+    image60x60: Schema.Attribute.Media<'images'>;
     percentage: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -385,7 +388,7 @@ export interface ElementsEmailLink extends Struct.ComponentSchema {
   attributes: {
     height: Schema.Attribute.String;
     href: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
+    image17x17: Schema.Attribute.Media<'images'>;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     text: Schema.Attribute.String;
     width: Schema.Attribute.String;
@@ -416,8 +419,8 @@ export interface ElementsExpertTestimonials extends Struct.ComponentSchema {
   };
   attributes: {
     client: Schema.Attribute.Component<'elements.client', false>;
-    p: Schema.Attribute.Text;
-    quoteImage: Schema.Attribute.Media<'images'>;
+    paragraph: Schema.Attribute.Text;
+    quoteImage40x40: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -453,9 +456,7 @@ export interface ElementsLogoLink extends Struct.ComponentSchema {
     description: '';
     displayName: 'logoLink';
   };
-  attributes: {
-    logo: Schema.Attribute.Media<'images'>;
-  };
+  attributes: {};
 }
 
 export interface ElementsParent extends Struct.ComponentSchema {
@@ -465,26 +466,23 @@ export interface ElementsParent extends Struct.ComponentSchema {
     displayName: 'parent';
   };
   attributes: {
-    h2: Schema.Attribute.String;
-    h3: Schema.Attribute.String;
-    h4: Schema.Attribute.String;
-    subTitle: Schema.Attribute.String;
+    highlighted: Schema.Attribute.String;
+    prefix: Schema.Attribute.String;
+    suffix: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
 export interface ElementsPhoneLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_phone_links';
   info: {
-    description: '';
     displayName: 'phoneLink';
   };
   attributes: {
-    height: Schema.Attribute.String;
     href: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     text: Schema.Attribute.String;
-    width: Schema.Attribute.String;
   };
 }
 
@@ -668,12 +666,13 @@ export interface LandingPageAboutUs extends Struct.ComponentSchema {
   attributes: {
     campaigns: Schema.Attribute.String;
     campaignsText: Schema.Attribute.String;
-    h1: Schema.Attribute.String;
-    h2: Schema.Attribute.String;
-    h3: Schema.Attribute.String;
-    leftImage: Schema.Attribute.Media<'images'>;
-    p: Schema.Attribute.Text;
-    subTitle: Schema.Attribute.String;
+    leftImage553x534: Schema.Attribute.Media<'images'>;
+    paragraph: Schema.Attribute.Text;
+    prefix: Schema.Attribute.String;
+    primaryHighlighted: Schema.Attribute.String;
+    secondaryHighlighted: Schema.Attribute.String;
+    suffix: Schema.Attribute.String;
+    title: Schema.Attribute.String;
     traffic: Schema.Attribute.String;
     trafficText: Schema.Attribute.String;
   };
@@ -700,8 +699,8 @@ export interface LandingPageCaseStudies extends Struct.ComponentSchema {
     displayName: 'Case Studies';
   };
   attributes: {
-    h2: Schema.Attribute.String;
-    subTitle: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -713,12 +712,12 @@ export interface LandingPageDigitalAgency extends Struct.ComponentSchema {
   };
   attributes: {
     detail: Schema.Attribute.Component<'elements.detail', true>;
-    h1: Schema.Attribute.String;
-    h2: Schema.Attribute.String;
-    h3: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
-    p: Schema.Attribute.Text;
-    subTitle: Schema.Attribute.String;
+    highlighted: Schema.Attribute.String;
+    image553x534: Schema.Attribute.Media<'images'>;
+    paragraph: Schema.Attribute.Text;
+    prefix: Schema.Attribute.String;
+    suffix: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -729,11 +728,11 @@ export interface LandingPageHeroSection extends Struct.ComponentSchema {
     displayName: 'hero-section';
   };
   attributes: {
-    h1: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
-    p: Schema.Attribute.Text;
+    image1920x1000: Schema.Attribute.Media<'images'>;
+    paragraph: Schema.Attribute.Text;
+    primaryHeading: Schema.Attribute.String;
+    secondaryHeading: Schema.Attribute.String;
     socialLinks: Schema.Attribute.Component<'elements.email-link', true>;
-    subh1: Schema.Attribute.String;
   };
 }
 
@@ -744,7 +743,7 @@ export interface LandingPageOurExpertTeam extends Struct.ComponentSchema {
     displayName: 'Our Expert Team';
   };
   attributes: {
-    clientImages: Schema.Attribute.Media<
+    clientImages80x80: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
     >;

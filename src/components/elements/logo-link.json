@@ -5,13 +5,5 @@
     "description": ""
   },
   "options": {},
-  "attributes": {
-    "logo": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    }
-  }
+  "attributes": {}
 }

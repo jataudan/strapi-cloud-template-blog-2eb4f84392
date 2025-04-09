@@ -1,14 +1,21 @@
 "use strict";
-const lifecycleHooks = require("./middlewares/lifecycle");
+const bootstrap = require("./bootstrap");
 
 module.exports = {
-  async register({ strapi }) {
-    strapi.db.lifecycles.subscribe(lifecycleHooks);
-  },
-  async bootstrap() {
-    // Any bootstrap logic if needed
-  },
-  async destroy() {
-    // Cleanup tasks if needed
-  },
+  /**
+   * An asynchronous register function that runs before
+   * your application is initialized.
+   *
+   * This gives you an opportunity to extend code.
+   */
+  register(/*{ strapi }*/) {},
+
+  /**
+   * An asynchronous bootstrap function that runs before
+   * your application gets started.
+   *
+   * This gives you an opportunity to set up your data model,
+   * run jobs, or perform some special logic.
+   */
+  bootstrap,
 };

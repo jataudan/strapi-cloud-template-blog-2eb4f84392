@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "leftImage": {
+    "leftImage553x534": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -14,13 +14,13 @@
         "images"
       ]
     },
-    "subTitle": {
+    "prefix": {
       "type": "string"
     },
-    "h1": {
+    "primaryHighlighted": {
       "type": "string"
     },
-    "p": {
+    "paragraph": {
       "type": "text"
     },
     "campaigns": {
@@ -35,10 +35,13 @@
     "trafficText": {
       "type": "string"
     },
-    "h2": {
+    "suffix": {
       "type": "string"
     },
-    "h3": {
+    "title": {
+      "type": "string"
+    },
+    "secondaryHighlighted": {
       "type": "string"
     }
   }
