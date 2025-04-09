@@ -456,7 +456,9 @@ export interface ElementsLogoLink extends Struct.ComponentSchema {
     description: '';
     displayName: 'logoLink';
   };
-  attributes: {};
+  attributes: {
+    logo187x38: Schema.Attribute.Media<'images', true>;
+  };
 }
 
 export interface ElementsParent extends Struct.ComponentSchema {
