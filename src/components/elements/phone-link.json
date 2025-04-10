@@ -23,6 +23,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
     }
   }
 }

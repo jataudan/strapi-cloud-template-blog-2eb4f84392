@@ -493,10 +493,12 @@ export interface ElementsPhoneLink extends Struct.ComponentSchema {
     displayName: 'phoneLink';
   };
   attributes: {
+    height: Schema.Attribute.String;
     href: Schema.Attribute.String;
     image18x18: Schema.Attribute.Media<'images'>;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     text: Schema.Attribute.String;
+    width: Schema.Attribute.String;
   };
 }
 
