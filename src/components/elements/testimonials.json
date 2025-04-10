@@ -1,16 +1,18 @@
 {
   "collectionName": "components_elements_testimonials",
   "info": {
-    "displayName": "Testimonials"
+    "displayName": "Testimonials",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "clientImages": {
+    "clientImages50x50": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "count": {
       "type": "string"

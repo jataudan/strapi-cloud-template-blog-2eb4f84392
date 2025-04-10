@@ -492,11 +492,12 @@ export interface ElementsPhoneLink extends Struct.ComponentSchema {
 export interface ElementsTestimonials extends Struct.ComponentSchema {
   collectionName: 'components_elements_testimonials';
   info: {
+    description: '';
     displayName: 'Testimonials';
   };
   attributes: {
     buttonText: Schema.Attribute.String;
-    clientImages: Schema.Attribute.Media<'images', true>;
+    clientImages50x50: Schema.Attribute.Media<'images', true>;
     count: Schema.Attribute.String;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
   };
