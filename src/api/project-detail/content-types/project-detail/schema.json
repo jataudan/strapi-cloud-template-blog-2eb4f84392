@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "mainImage": {
+    "mainImage570x455": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -32,7 +32,7 @@
       "repeatable": false,
       "component": "portfolio.project-information"
     },
-    "projectImages": {
+    "projectImages1194x543": {
       "type": "media",
       "multiple": true,
       "required": false,

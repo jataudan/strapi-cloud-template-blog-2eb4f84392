@@ -799,8 +799,8 @@ export interface ApiProjectDetailProjectDetail
       'api::project-detail.project-detail'
     > &
       Schema.Attribute.Private;
-    mainImage: Schema.Attribute.Media<'images'>;
-    projectImages: Schema.Attribute.Media<'images', true>;
+    mainImage570x455: Schema.Attribute.Media<'images'>;
+    projectImages1194x543: Schema.Attribute.Media<'images', true>;
     projectInfo: Schema.Attribute.Component<
       'portfolio.project-information',
       false
