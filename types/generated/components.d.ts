@@ -478,11 +478,12 @@ export interface ElementsParent extends Struct.ComponentSchema {
 export interface ElementsPhoneLink extends Struct.ComponentSchema {
   collectionName: 'components_elements_phone_links';
   info: {
+    description: '';
     displayName: 'phoneLink';
   };
   attributes: {
     href: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
+    image18x18: Schema.Attribute.Media<'images'>;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     text: Schema.Attribute.String;
   };
