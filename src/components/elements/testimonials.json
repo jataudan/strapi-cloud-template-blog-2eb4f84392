@@ -15,6 +15,11 @@
     "isExternal": {
       "type": "boolean",
       "default": false
+    },
+    "clientImages50x50": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.client-images"
     }
   }
 }

@@ -508,6 +508,10 @@ export interface ElementsTestimonials extends Struct.ComponentSchema {
   };
   attributes: {
     buttonText: Schema.Attribute.String;
+    clientImages50x50: Schema.Attribute.Component<
+      'elements.client-images',
+      true
+    >;
     count: Schema.Attribute.String;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
   };
@@ -776,10 +780,6 @@ export interface LandingPageServices extends Struct.ComponentSchema {
     displayName: 'Services';
   };
   attributes: {
-    clientImages50x50: Schema.Attribute.Component<
-      'elements.client-images',
-      true
-    >;
     testimonials: Schema.Attribute.Component<'elements.testimonials', false>;
   };
 }
