@@ -857,6 +857,7 @@ export interface MainLayoutFontFamily extends Struct.ComponentSchema {
 export interface MainLayoutFooter extends Struct.ComponentSchema {
   collectionName: 'components_main_layout_footers';
   info: {
+    description: '';
     displayName: 'footer';
   };
   attributes: {
@@ -864,7 +865,7 @@ export interface MainLayoutFooter extends Struct.ComponentSchema {
     color: Schema.Attribute.String;
     description: Schema.Attribute.String;
     footerBottomLeftText: Schema.Attribute.String;
-    logo: Schema.Attribute.Media<'images', true>;
+    logo160x24: Schema.Attribute.Media<'images', true>;
     logoText: Schema.Attribute.String;
     socialLinks: Schema.Attribute.Component<'elements.phone-link', true>;
   };

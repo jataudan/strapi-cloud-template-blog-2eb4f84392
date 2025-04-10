@@ -1,26 +1,29 @@
 {
   "collectionName": "components_main_layout_footers",
   "info": {
-    "displayName": "footer"
+    "displayName": "footer",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "bgImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "color": {
       "type": "string"
     },
-    "logo": {
+    "logo160x24": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "logoText": {
       "type": "string"
