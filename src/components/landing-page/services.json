@@ -11,6 +11,12 @@
       "type": "component",
       "repeatable": false,
       "component": "elements.testimonials"
+    },
+    "clientImages50x50": {
+      "displayName": "clientImages",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.client-images"
     }
   }
 }

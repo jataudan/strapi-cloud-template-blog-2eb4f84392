@@ -366,6 +366,17 @@ export interface ElementsClient extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsClientImages extends Struct.ComponentSchema {
+  collectionName: 'components_elements_client_images';
+  info: {
+    description: '';
+    displayName: 'clientImages';
+  };
+  attributes: {
+    image50x50: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface ElementsDetail extends Struct.ComponentSchema {
   collectionName: 'components_elements_details';
   info: {
@@ -497,7 +508,6 @@ export interface ElementsTestimonials extends Struct.ComponentSchema {
   };
   attributes: {
     buttonText: Schema.Attribute.String;
-    clientImages50x50: Schema.Attribute.Media<'images', true>;
     count: Schema.Attribute.String;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
   };
@@ -766,6 +776,10 @@ export interface LandingPageServices extends Struct.ComponentSchema {
     displayName: 'Services';
   };
   attributes: {
+    clientImages50x50: Schema.Attribute.Component<
+      'elements.client-images',
+      true
+    >;
     testimonials: Schema.Attribute.Component<'elements.testimonials', false>;
   };
 }
@@ -1176,6 +1190,7 @@ declare module '@strapi/strapi' {
       'contact-info.contact-info': ContactInfoContactInfo;
       'elements.cards': ElementsCards;
       'elements.client': ElementsClient;
+      'elements.client-images': ElementsClientImages;
       'elements.detail': ElementsDetail;
       'elements.email-link': ElementsEmailLink;
       'elements.expert-team-card': ElementsExpertTeamCard;
