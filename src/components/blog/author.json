@@ -12,7 +12,7 @@
     "designation": {
       "type": "string"
     },
-    "avatar": {
+    "avatar56x56": {
       "type": "media",
       "multiple": false,
       "required": false,

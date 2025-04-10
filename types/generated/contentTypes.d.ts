@@ -485,10 +485,10 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::blog-comment.blog-comment'
     >;
-    blogImages: Schema.Attribute.Media<'images', true>;
+    blogImages770x350: Schema.Attribute.Media<'images', true>;
     categories: Schema.Attribute.Component<'blog.categories', true>;
     comments: Schema.Attribute.Component<'blog.comments', true>;
-    coverImage: Schema.Attribute.Media<'images'>;
+    coverImage570x582: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

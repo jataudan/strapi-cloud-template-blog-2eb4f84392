@@ -18,7 +18,7 @@
     "description": {
       "type": "richtext"
     },
-    "coverImage": {
+    "coverImage570x582": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -38,7 +38,7 @@
       "type": "uid",
       "targetField": "title"
     },
-    "blogImages": {
+    "blogImages770x350": {
       "type": "media",
       "multiple": true,
       "required": false,
