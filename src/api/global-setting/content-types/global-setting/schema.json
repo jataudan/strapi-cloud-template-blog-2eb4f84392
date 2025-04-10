@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "colorScheme": {
-      "displayName": "Color Scheme",
-      "type": "component",
-      "repeatable": true,
-      "component": "main-layout.color-scheme"
-    },
     "primary": {
       "type": "string"
     },
@@ -28,9 +22,6 @@
       "type": "string"
     },
     "foreground": {
-      "type": "string"
-    },
-    "blogDescription": {
       "type": "string"
     },
     "fontsFamily": {

@@ -652,8 +652,6 @@ export interface ApiGlobalSettingGlobalSetting extends Struct.SingleTypeSchema {
   };
   attributes: {
     background: Schema.Attribute.String;
-    blogDescription: Schema.Attribute.String;
-    colorScheme: Schema.Attribute.Component<'main-layout.color-scheme', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
