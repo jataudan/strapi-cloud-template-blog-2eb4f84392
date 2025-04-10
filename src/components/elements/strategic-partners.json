@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_strategic_partners",
+  "info": {
+    "displayName": "Strategic Partners",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "partners": {
+      "displayName": "Trusted Strategic Partners",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.trusted-strategic-partners"
+    }
+  }
+}

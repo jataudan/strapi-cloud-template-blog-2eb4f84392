@@ -500,6 +500,20 @@ export interface ElementsPhoneLink extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsStrategicPartners extends Struct.ComponentSchema {
+  collectionName: 'components_elements_strategic_partners';
+  info: {
+    description: '';
+    displayName: 'Strategic Partners';
+  };
+  attributes: {
+    partners: Schema.Attribute.Component<
+      'elements.trusted-strategic-partners',
+      true
+    >;
+  };
+}
+
 export interface ElementsTestimonials extends Struct.ComponentSchema {
   collectionName: 'components_elements_testimonials';
   info: {
@@ -514,6 +528,18 @@ export interface ElementsTestimonials extends Struct.ComponentSchema {
     >;
     count: Schema.Attribute.String;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface ElementsTrustedStrategicPartners
+  extends Struct.ComponentSchema {
+  collectionName: 'components_elements_trusted_strategic_partners';
+  info: {
+    displayName: 'Trusted Strategic Partners';
+  };
+  attributes: {
+    partnerImage113x44: Schema.Attribute.Media<'images'> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -1201,7 +1227,9 @@ declare module '@strapi/strapi' {
       'elements.logo-link': ElementsLogoLink;
       'elements.parent': ElementsParent;
       'elements.phone-link': ElementsPhoneLink;
+      'elements.strategic-partners': ElementsStrategicPartners;
       'elements.testimonials': ElementsTestimonials;
+      'elements.trusted-strategic-partners': ElementsTrustedStrategicPartners;
       'generation-wealth.contact': GenerationWealthContact;
       'generation-wealth.generation-wealth': GenerationWealthGenerationWealth;
       'generation-wealth.main-section': GenerationWealthMainSection;

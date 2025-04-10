@@ -768,6 +768,10 @@ export interface ApiLandingLanding extends Struct.SingleTypeSchema {
     offer: Schema.Attribute.Component<'landing-page.special-offer', false>;
     publishedAt: Schema.Attribute.DateTime;
     services: Schema.Attribute.Component<'landing-page.services', false>;
+    strategicPartnersImages: Schema.Attribute.Component<
+      'elements.strategic-partners',
+      false
+    >;
     studies: Schema.Attribute.Component<'landing-page.case-studies', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
