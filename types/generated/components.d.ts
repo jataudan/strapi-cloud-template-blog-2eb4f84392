@@ -274,7 +274,7 @@ export interface BlogAuthor extends Struct.ComponentSchema {
     displayName: 'Author';
   };
   attributes: {
-    avatar: Schema.Attribute.Media<'images'>;
+    avatar56x56: Schema.Attribute.Media<'images'>;
     designation: Schema.Attribute.String;
     name: Schema.Attribute.String;
   };
