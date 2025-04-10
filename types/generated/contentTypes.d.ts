@@ -839,7 +839,7 @@ export interface ApiServicesDetailServicesDetail
       'api::services-detail.services-detail'
     > &
       Schema.Attribute.Private;
-    mainImage: Schema.Attribute.Media<'images'>;
+    mainImage252x286: Schema.Attribute.Media<'images'>;
     openingHours: Schema.Attribute.Component<'services.opening-hours', true>;
     publishedAt: Schema.Attribute.DateTime;
     questions: Schema.Attribute.Component<'services.questions', true>;

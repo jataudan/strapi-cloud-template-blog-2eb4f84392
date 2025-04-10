@@ -955,10 +955,11 @@ export interface ServicesClosedDays extends Struct.ComponentSchema {
 export interface ServicesContactDetails extends Struct.ComponentSchema {
   collectionName: 'components_services_contact_details';
   info: {
+    description: '';
     displayName: 'Contact Details';
   };
   attributes: {
-    icon: Schema.Attribute.Media<'images'>;
+    icon70x70: Schema.Attribute.Media<'images'>;
     phoneNumbers: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
