@@ -787,10 +787,11 @@ export interface LandingPageServices extends Struct.ComponentSchema {
 export interface LandingPageSpecialOffer extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_special_offers';
   info: {
+    description: '';
     displayName: 'Special Offer';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images'>;
+    image733x608: Schema.Attribute.Media<'images'>;
     parent: Schema.Attribute.Component<'elements.parent', false>;
   };
 }

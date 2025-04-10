@@ -1,16 +1,18 @@
 {
   "collectionName": "components_landing_page_special_offers",
   "info": {
-    "displayName": "Special Offer"
+    "displayName": "Special Offer",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "image": {
+    "image733x608": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "parent": {
       "displayName": "parent",
