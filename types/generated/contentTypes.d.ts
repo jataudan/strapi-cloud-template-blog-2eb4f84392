@@ -862,8 +862,7 @@ export interface ApiServicesDetailServicesDetail
     shortDescription: Schema.Attribute.String;
     slug: Schema.Attribute.UID<'title'>;
     thumbnail300x300: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+      'images' | 'files' | 'videos' | 'audios'
     >;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
