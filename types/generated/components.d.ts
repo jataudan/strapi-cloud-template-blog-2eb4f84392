@@ -16,10 +16,11 @@ export interface AboutUsAboutUs extends Struct.ComponentSchema {
 export interface AboutUsBenefits extends Struct.ComponentSchema {
   collectionName: 'components_about_us_benefits';
   info: {
+    description: '';
     displayName: 'benefits';
   };
   attributes: {
-    icon: Schema.Attribute.Media<'images'>;
+    icon64x62: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String;
   };
 }
@@ -31,12 +32,12 @@ export interface AboutUsChooseUs extends Struct.ComponentSchema {
     displayName: 'Choose Us';
   };
   attributes: {
-    backgroundImage: Schema.Attribute.Media<'images'>;
+    backgroundImage2074x602: Schema.Attribute.Media<'images'>;
     benefits: Schema.Attribute.Component<'about-us.benefits', true>;
     color: Schema.Attribute.String;
     contactInfo: Schema.Attribute.Component<'about-us.contact-info', false>;
     heading: Schema.Attribute.String;
-    mainImage: Schema.Attribute.Media<'images'>;
+    mainImage588x583: Schema.Attribute.Media<'images'>;
     paragraph: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
@@ -50,7 +51,7 @@ export interface AboutUsContactInfo extends Struct.ComponentSchema {
   };
   attributes: {
     designation: Schema.Attribute.String;
-    icon: Schema.Attribute.Media<'images'>;
+    icon56x54: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String;
     phoneNumber: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -79,7 +80,7 @@ export interface AboutUsSection extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    image: Schema.Attribute.Media<'images'>;
+    image100x100: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;
   };
 }
@@ -91,12 +92,12 @@ export interface AboutUsTestimonials extends Struct.ComponentSchema {
     displayName: 'testimonials';
   };
   attributes: {
-    backgroundImage: Schema.Attribute.Media<'images'>;
+    backgroundImage1920x782: Schema.Attribute.Media<'images'>;
     boldHeading: Schema.Attribute.String;
     card: Schema.Attribute.Component<'about-us.testimonials-card', true>;
     heading: Schema.Attribute.String;
     highlighted: Schema.Attribute.String;
-    sideImage: Schema.Attribute.Media<'images'>;
+    sideImage528x686: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;
   };
 }
@@ -108,10 +109,10 @@ export interface AboutUsTestimonialsCard extends Struct.ComponentSchema {
     displayName: 'Testimonials Card';
   };
   attributes: {
-    clientImage: Schema.Attribute.Media<'images'>;
+    clientImage60x60: Schema.Attribute.Media<'images'>;
     comments: Schema.Attribute.Text;
     name: Schema.Attribute.String;
-    quoteImage: Schema.Attribute.Media<'images'>;
+    quoteImage45x45: Schema.Attribute.Media<'images'>;
     role: Schema.Attribute.String;
   };
 }
@@ -123,7 +124,7 @@ export interface AboutUsWorkingProcess extends Struct.ComponentSchema {
     displayName: 'Working Process';
   };
   attributes: {
-    backgroundImage: Schema.Attribute.Media<'images'>;
+    backgroundImage2074x602: Schema.Attribute.Media<'images'>;
     color: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     milestones: Schema.Attribute.Component<'about-us.section', true>;

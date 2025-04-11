@@ -24,7 +24,7 @@
       "repeatable": false,
       "component": "about-us.contact-info"
     },
-    "backgroundImage": {
+    "backgroundImage2074x602": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -35,7 +35,7 @@
     "color": {
       "type": "string"
     },
-    "mainImage": {
+    "mainImage588x583": {
       "type": "media",
       "multiple": false,
       "required": false,

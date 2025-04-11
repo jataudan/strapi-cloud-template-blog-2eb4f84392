@@ -9,7 +9,7 @@
     "title": {
       "type": "string"
     },
-    "sideImage": {
+    "sideImage528x686": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -17,7 +17,7 @@
         "images"
       ]
     },
-    "backgroundImage": {
+    "backgroundImage1920x782": {
       "type": "media",
       "multiple": false,
       "required": false,

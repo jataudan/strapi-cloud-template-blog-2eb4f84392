@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "quoteImage": {
+    "quoteImage45x45": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -23,7 +23,7 @@
     "role": {
       "type": "string"
     },
-    "clientImage": {
+    "clientImage60x60": {
       "type": "media",
       "multiple": false,
       "required": false,
