@@ -1066,7 +1066,7 @@ export interface ServicesServiceTestimonials extends Struct.ComponentSchema {
     clientDetails: Schema.Attribute.Component<'elements.client', false>;
     clientImage585x609: Schema.Attribute.Media<'images'>;
     heading: Schema.Attribute.String;
-    paragraph: Schema.Attribute.String;
+    paragraph: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
 }

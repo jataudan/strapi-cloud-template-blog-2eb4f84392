@@ -21,7 +21,7 @@
       "type": "string"
     },
     "paragraph": {
-      "type": "string"
+      "type": "text"
     },
     "clientDetails": {
       "type": "component",
