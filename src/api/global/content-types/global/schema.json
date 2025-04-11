@@ -56,6 +56,11 @@
       "type": "component",
       "repeatable": false,
       "component": "main-layout.footer"
+    },
+    "serviceTestimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "services.service-testimonials"
     }
   }
 }

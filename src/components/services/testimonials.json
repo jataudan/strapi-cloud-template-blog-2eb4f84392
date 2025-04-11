@@ -1,22 +1,21 @@
 {
   "collectionName": "components_services_testimonials",
   "info": {
-    "displayName": "testimonials"
+    "displayName": "testimonials",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "subTag": {
-      "type": "string"
-    },
     "h2": {
       "type": "string"
     },
     "starImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "p": {
       "type": "string"
@@ -28,25 +27,28 @@
       "type": "string"
     },
     "clientImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "sideImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
