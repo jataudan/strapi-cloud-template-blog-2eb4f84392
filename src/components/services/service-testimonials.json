@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_services_service_testimonials",
+  "info": {
+    "displayName": "Service Testimonials",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "clientImage585x609": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "string"
+    },
+    "clientDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.client"
+    }
+  }
+}

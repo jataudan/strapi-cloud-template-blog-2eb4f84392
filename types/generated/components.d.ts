@@ -1056,6 +1056,21 @@ export interface ServicesServiceList extends Struct.ComponentSchema {
   };
 }
 
+export interface ServicesServiceTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_services_service_testimonials';
+  info: {
+    description: '';
+    displayName: 'Service Testimonials';
+  };
+  attributes: {
+    clientDetails: Schema.Attribute.Component<'elements.client', false>;
+    clientImage585x609: Schema.Attribute.Media<'images'>;
+    heading: Schema.Attribute.String;
+    paragraph: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ServicesTestimonials extends Struct.ComponentSchema {
   collectionName: 'components_services_testimonials';
   info: {
@@ -1268,6 +1283,7 @@ declare module '@strapi/strapi' {
       'services.opening-hours': ServicesOpeningHours;
       'services.questions': ServicesQuestions;
       'services.service-list': ServicesServiceList;
+      'services.service-testimonials': ServicesServiceTestimonials;
       'services.testimonials': ServicesTestimonials;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
