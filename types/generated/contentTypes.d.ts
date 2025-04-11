@@ -843,7 +843,7 @@ export interface ApiServicesDetailServicesDetail
       'api::services-detail.services-detail'
     > &
       Schema.Attribute.Private;
-    mainImage252x286: Schema.Attribute.Media<'images'>;
+    mainImage770x370: Schema.Attribute.Media<'images'>;
     openingHours: Schema.Attribute.Component<'services.opening-hours', true>;
     publishedAt: Schema.Attribute.DateTime;
     questions: Schema.Attribute.Component<'services.questions', true>;
@@ -861,6 +861,10 @@ export interface ApiServicesDetailServicesDetail
       Schema.Attribute.DefaultTo<'web-development'>;
     shortDescription: Schema.Attribute.String;
     slug: Schema.Attribute.UID<'title'>;
+    thumbnail300x300: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
