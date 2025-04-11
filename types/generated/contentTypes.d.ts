@@ -699,6 +699,10 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     mainTopNav: Schema.Attribute.Component<'main-layout.main-top-nav', false>;
     publishedAt: Schema.Attribute.DateTime;
+    serviceTestimonials: Schema.Attribute.Component<
+      'services.service-testimonials',
+      false
+    >;
     siteDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
     topnav: Schema.Attribute.Component<'layout.topnav', false>;

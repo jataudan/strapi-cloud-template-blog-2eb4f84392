@@ -1074,6 +1074,7 @@ export interface ServicesServiceTestimonials extends Struct.ComponentSchema {
 export interface ServicesTestimonials extends Struct.ComponentSchema {
   collectionName: 'components_services_testimonials';
   info: {
+    description: '';
     displayName: 'testimonials';
   };
   attributes: {
@@ -1085,7 +1086,6 @@ export interface ServicesTestimonials extends Struct.ComponentSchema {
     p: Schema.Attribute.String;
     sideImage: Schema.Attribute.Media<'images'>;
     starImage: Schema.Attribute.Media<'images'>;
-    subTag: Schema.Attribute.String;
   };
 }
 
