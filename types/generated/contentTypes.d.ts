@@ -896,7 +896,6 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
     designation: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::team.team'> &
       Schema.Attribute.Private;
@@ -906,6 +905,7 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
     skills: Schema.Attribute.Component<'team.skills', true>;
     slug: Schema.Attribute.UID<'designation'>;
     socials: Schema.Attribute.Component<'team.socials', true>;
+    teamImage294x294: Schema.Attribute.Media<'images'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
