@@ -15,7 +15,7 @@
     "title": {
       "type": "string"
     },
-    "image": {
+    "image453x349": {
       "type": "media",
       "multiple": false,
       "required": false,
