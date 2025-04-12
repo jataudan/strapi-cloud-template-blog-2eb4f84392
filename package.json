@@ -21,6 +21,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "sharp": "^0.34.1",
     "strip-final-newline": "^4.0.0",
     "styled-components": "^6.0.0"
   },

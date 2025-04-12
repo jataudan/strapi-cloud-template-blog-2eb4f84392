@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "bgColor": {
+    "heroSectionBgColor": {
       "type": "string"
     },
-    "bgImage": {
+    "heroSectionImage1920x537": {
       "type": "media",
       "multiple": false,
       "required": false,

@@ -724,11 +724,11 @@ export interface ApiHeroSectionHeroSection extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    bgColor: Schema.Attribute.String;
-    bgImage: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroSectionBgColor: Schema.Attribute.String;
+    heroSectionImage1920x537: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
