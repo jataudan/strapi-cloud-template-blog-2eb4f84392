@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "bgImage": {
+    "bgImage1920x789": {
       "type": "media",
       "multiple": true,
       "required": false,

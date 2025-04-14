@@ -808,7 +808,7 @@ export interface ApiProjectDetailProjectDetail
     > &
       Schema.Attribute.Private;
     mainImage570x455: Schema.Attribute.Media<'images'>;
-    projectImages1194x543: Schema.Attribute.Media<'images', true>;
+    projectImages1194x543: Schema.Attribute.Media<'images'>;
     projectInfo: Schema.Attribute.Component<
       'portfolio.project-information',
       false

@@ -34,7 +34,7 @@
     },
     "projectImages1194x543": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
