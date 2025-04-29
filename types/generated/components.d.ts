@@ -522,7 +522,7 @@ export interface ElementsStrategicPartners extends Struct.ComponentSchema {
   attributes: {
     partners: Schema.Attribute.Component<
       'elements.trusted-strategic-partners',
-      true
+      false
     >;
   };
 }
