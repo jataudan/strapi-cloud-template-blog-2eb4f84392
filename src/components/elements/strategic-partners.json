@@ -9,7 +9,7 @@
     "partners": {
       "displayName": "Trusted Strategic Partners",
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "elements.trusted-strategic-partners"
     }
   }
