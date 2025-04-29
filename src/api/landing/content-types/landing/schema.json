@@ -51,6 +51,11 @@
       "type": "component",
       "repeatable": false,
       "component": "elements.strategic-partners"
+    },
+    "blog": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.parent"
     }
   }
 }

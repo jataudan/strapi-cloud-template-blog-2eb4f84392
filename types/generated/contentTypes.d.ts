@@ -757,6 +757,7 @@ export interface ApiLandingLanding extends Struct.SingleTypeSchema {
   };
   attributes: {
     about: Schema.Attribute.Component<'landing-page.about-us', false>;
+    blog: Schema.Attribute.Component<'elements.parent', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
