@@ -9,7 +9,10 @@
     "title": {
       "type": "string"
     },
-    "heading": {
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
       "type": "string"
     }
   }

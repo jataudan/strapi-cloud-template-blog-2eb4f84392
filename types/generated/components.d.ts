@@ -756,7 +756,8 @@ export interface LandingPageCaseStudies extends Struct.ComponentSchema {
     displayName: 'Case Studies';
   };
   attributes: {
-    heading: Schema.Attribute.String;
+    prefix: Schema.Attribute.String;
+    suffix: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }
