@@ -436,6 +436,16 @@ export interface ElementsExpertTestimonials extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsHeroSlider extends Struct.ComponentSchema {
+  collectionName: 'components_elements_hero_sliders';
+  info: {
+    displayName: 'Hero Slider';
+  };
+  attributes: {
+    sliderImages1920x1000: Schema.Attribute.Media<'files' | 'images', true>;
+  };
+}
+
 export interface ElementsImageSlider extends Struct.ComponentSchema {
   collectionName: 'components_elements_image_sliders';
   info: {
@@ -906,7 +916,7 @@ export interface MainLayoutFooter extends Struct.ComponentSchema {
     displayName: 'footer';
   };
   attributes: {
-    bgImage: Schema.Attribute.Media<'images', true>;
+    bgImage1920x789: Schema.Attribute.Media<'images', true>;
     color: Schema.Attribute.String;
     description: Schema.Attribute.String;
     footerBottomLeftText: Schema.Attribute.String;
@@ -1240,6 +1250,7 @@ declare module '@strapi/strapi' {
       'elements.email-link': ElementsEmailLink;
       'elements.expert-team-card': ElementsExpertTeamCard;
       'elements.expert-testimonials': ElementsExpertTestimonials;
+      'elements.hero-slider': ElementsHeroSlider;
       'elements.image-slider': ElementsImageSlider;
       'elements.link': ElementsLink;
       'elements.logo-link': ElementsLogoLink;

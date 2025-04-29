@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_hero_sliders",
+  "info": {
+    "displayName": "Hero Slider"
+  },
+  "options": {},
+  "attributes": {
+    "sliderImages1920x1000": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
