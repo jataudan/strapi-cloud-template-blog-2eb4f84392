@@ -27,6 +27,11 @@
     },
     "secondaryHeading": {
       "type": "string"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-slider"
     }
   }
 }

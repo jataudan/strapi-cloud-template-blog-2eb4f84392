@@ -789,6 +789,7 @@ export interface LandingPageHeroSection extends Struct.ComponentSchema {
     paragraph: Schema.Attribute.Text;
     primaryHeading: Schema.Attribute.String;
     secondaryHeading: Schema.Attribute.String;
+    slider: Schema.Attribute.Component<'elements.hero-slider', false>;
     socialLinks: Schema.Attribute.Component<'elements.email-link', true>;
   };
 }
