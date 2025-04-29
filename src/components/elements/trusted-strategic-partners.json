@@ -8,7 +8,7 @@
   "attributes": {
     "partnerImage113x44": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"

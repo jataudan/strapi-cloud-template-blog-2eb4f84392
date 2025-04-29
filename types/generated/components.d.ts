@@ -563,7 +563,7 @@ export interface ElementsTrustedStrategicPartners
     displayName: 'Trusted Strategic Partners';
   };
   attributes: {
-    partnerImage113x44: Schema.Attribute.Media<'images', true>;
+    partnerImage113x44: Schema.Attribute.Media<'images'>;
   };
 }
 
