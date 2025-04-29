@@ -527,6 +527,17 @@ export interface ElementsStrategicPartners extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsSubFooter extends Struct.ComponentSchema {
+  collectionName: 'components_elements_sub_footers';
+  info: {
+    displayName: 'Sub Footer';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    image332x379: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface ElementsTestimonials extends Struct.ComponentSchema {
   collectionName: 'components_elements_testimonials';
   info: {
@@ -548,11 +559,11 @@ export interface ElementsTrustedStrategicPartners
   extends Struct.ComponentSchema {
   collectionName: 'components_elements_trusted_strategic_partners';
   info: {
+    description: '';
     displayName: 'Trusted Strategic Partners';
   };
   attributes: {
-    partnerImage113x44: Schema.Attribute.Media<'images'> &
-      Schema.Attribute.Required;
+    partnerImage113x44: Schema.Attribute.Media<'images', true>;
   };
 }
 
@@ -925,6 +936,7 @@ export interface MainLayoutFooter extends Struct.ComponentSchema {
     logo160x24: Schema.Attribute.Media<'images', true>;
     logoText: Schema.Attribute.String;
     socialLinks: Schema.Attribute.Component<'elements.phone-link', true>;
+    subFooter: Schema.Attribute.Component<'elements.sub-footer', false>;
   };
 }
 
@@ -1259,6 +1271,7 @@ declare module '@strapi/strapi' {
       'elements.parent': ElementsParent;
       'elements.phone-link': ElementsPhoneLink;
       'elements.strategic-partners': ElementsStrategicPartners;
+      'elements.sub-footer': ElementsSubFooter;
       'elements.testimonials': ElementsTestimonials;
       'elements.trusted-strategic-partners': ElementsTrustedStrategicPartners;
       'generation-wealth.contact': GenerationWealthContact;

@@ -38,6 +38,12 @@
     },
     "footerBottomLeftText": {
       "type": "string"
+    },
+    "subFooter": {
+      "displayName": "Sub Footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.sub-footer"
     }
   }
 }

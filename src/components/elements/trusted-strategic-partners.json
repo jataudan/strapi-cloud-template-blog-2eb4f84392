@@ -1,17 +1,18 @@
 {
   "collectionName": "components_elements_trusted_strategic_partners",
   "info": {
-    "displayName": "Trusted Strategic Partners"
+    "displayName": "Trusted Strategic Partners",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "partnerImage113x44": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     }
   }
 }

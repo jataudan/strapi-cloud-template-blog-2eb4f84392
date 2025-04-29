@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_sub_footers",
+  "info": {
+    "displayName": "Sub Footer"
+  },
+  "options": {},
+  "attributes": {
+    "image332x379": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}
