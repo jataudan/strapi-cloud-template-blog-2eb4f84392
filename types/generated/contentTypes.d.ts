@@ -397,6 +397,7 @@ export interface ApiAboutUsAboutUs extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     testimonials: Schema.Attribute.Component<'about-us.testimonials', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -501,6 +502,7 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'>;
     tag: Schema.Attribute.Enumeration<
       [
@@ -604,6 +606,7 @@ export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -615,6 +618,7 @@ export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
 export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
   collectionName: 'faqs';
   info: {
+    description: '';
     displayName: 'FAQ';
     pluralName: 'faqs';
     singularName: 'faq';
@@ -632,6 +636,7 @@ export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
     mainImage: Schema.Attribute.Media<'images'>;
     publishedAt: Schema.Attribute.DateTime;
     questions: Schema.Attribute.Component<'services.questions', true>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -772,6 +777,7 @@ export interface ApiLandingLanding extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     offer: Schema.Attribute.Component<'landing-page.special-offer', false>;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     services: Schema.Attribute.Component<'landing-page.services', false>;
     strategicPartnersImages: Schema.Attribute.Component<
       'elements.strategic-partners',
@@ -815,6 +821,7 @@ export interface ApiProjectDetailProjectDetail
       false
     >;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'>;
     tag: Schema.Attribute.Component<'blog.tags', false>;
     title: Schema.Attribute.String;
@@ -852,6 +859,7 @@ export interface ApiServicesDetailServicesDetail
     openingHours: Schema.Attribute.Component<'services.opening-hours', true>;
     publishedAt: Schema.Attribute.DateTime;
     questions: Schema.Attribute.Component<'services.questions', true>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     servicesImages: Schema.Attribute.Media<'images', true>;
     servicesList: Schema.Attribute.Enumeration<
       [

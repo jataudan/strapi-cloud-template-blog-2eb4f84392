@@ -36,6 +36,11 @@
       "type": "component",
       "repeatable": false,
       "component": "about-us.testimonials"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

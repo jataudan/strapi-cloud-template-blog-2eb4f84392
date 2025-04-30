@@ -38,6 +38,11 @@
       "type": "component",
       "repeatable": false,
       "component": "contact-info.contact-info"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
