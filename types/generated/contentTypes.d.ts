@@ -690,6 +690,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
   attributes: {
     blog: Schema.Attribute.Component<'landing-page.blog', true>;
+    blogSeo: Schema.Attribute.Component<'shared.seo', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -703,7 +704,9 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     mainTopNav: Schema.Attribute.Component<'main-layout.main-top-nav', false>;
+    protfolioSeo: Schema.Attribute.Component<'shared.seo', false>;
     publishedAt: Schema.Attribute.DateTime;
+    serviceSeo: Schema.Attribute.Component<'shared.seo', false>;
     serviceTestimonials: Schema.Attribute.Component<
       'services.service-testimonials',
       false
