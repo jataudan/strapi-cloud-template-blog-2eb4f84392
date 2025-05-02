@@ -86,6 +86,13 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "iconImage88x102": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

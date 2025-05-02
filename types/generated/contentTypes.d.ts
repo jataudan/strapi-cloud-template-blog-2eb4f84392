@@ -852,6 +852,7 @@ export interface ApiServicesDetailServicesDetail
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.RichText;
+    iconImage88x102: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
