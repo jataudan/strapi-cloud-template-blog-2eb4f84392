@@ -322,6 +322,12 @@ export interface BlogTags extends Struct.ComponentSchema {
         'Advertising',
         'Development',
         'Branding',
+        'Website Design & Development',
+        'UI & Product Design',
+        'Branding & Identity',
+        'SEO & Digital Marketing',
+        'E-commerce Solutions',
+        'Custom Web Applications',
       ]
     >;
   };
@@ -1064,6 +1070,7 @@ export interface ServicesQuestions extends Struct.ComponentSchema {
 export interface ServicesServiceList extends Struct.ComponentSchema {
   collectionName: 'components_services_service_lists';
   info: {
+    description: '';
     displayName: 'service list';
   };
   attributes: {
@@ -1075,6 +1082,12 @@ export interface ServicesServiceList extends Struct.ComponentSchema {
         'Brand Design Identity',
         'Email Marketing',
         'Video Production',
+        'Website Design & Development',
+        'UI & Product Design',
+        'Branding & Identity',
+        'SEO & Digital Marketing',
+        'E-commerce Solutions',
+        'Custom Web Applications',
       ]
     >;
   };

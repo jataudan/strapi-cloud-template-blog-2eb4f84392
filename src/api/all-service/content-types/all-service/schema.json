@@ -4,7 +4,8 @@
   "info": {
     "singularName": "all-service",
     "pluralName": "all-services",
-    "displayName": "All Service"
+    "displayName": "All Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

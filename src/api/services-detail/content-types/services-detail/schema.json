@@ -26,7 +26,13 @@
         "seo",
         "email-marketing",
         "digital-strategy",
-        "brand-design"
+        "brand-design",
+        "website-design-development  ",
+        "ui-product-design  ",
+        "branding-identity  ",
+        "seo-digital-marketing  ",
+        "ecommerce-solutions  ",
+        "custom-web-applications"
       ],
       "default": "web-development"
     },
@@ -88,11 +94,12 @@
       "component": "shared.seo"
     },
     "iconImage88x102": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

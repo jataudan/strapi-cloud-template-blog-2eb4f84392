@@ -412,6 +412,7 @@ export interface ApiAboutUsAboutUs extends Struct.SingleTypeSchema {
 export interface ApiAllServiceAllService extends Struct.CollectionTypeSchema {
   collectionName: 'all_services';
   info: {
+    description: '';
     displayName: 'All Service';
     pluralName: 'all-services';
     singularName: 'all-service';
@@ -873,6 +874,12 @@ export interface ApiServicesDetailServicesDetail
         'email-marketing',
         'digital-strategy',
         'brand-design',
+        'website-design-development  ',
+        'ui-product-design  ',
+        'branding-identity  ',
+        'seo-digital-marketing  ',
+        'ecommerce-solutions  ',
+        'custom-web-applications',
       ]
     > &
       Schema.Attribute.DefaultTo<'web-development'>;
