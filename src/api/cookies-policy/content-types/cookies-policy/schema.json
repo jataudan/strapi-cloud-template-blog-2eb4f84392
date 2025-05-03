@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "cookies_policies",
+  "info": {
+    "singularName": "cookies-policy",
+    "pluralName": "cookies-policies",
+    "displayName": "Cookies Policy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
