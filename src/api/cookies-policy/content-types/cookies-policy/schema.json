@@ -21,14 +21,24 @@
       "type": "string"
     },
     "image500x500": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "content": {
       "type": "richtext"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "highlighted": {
+      "type": "string"
     }
   }
 }

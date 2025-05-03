@@ -30,6 +30,15 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "highlighted": {
+      "type": "string"
     }
   }
 }
