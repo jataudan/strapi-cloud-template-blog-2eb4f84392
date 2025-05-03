@@ -16,6 +16,19 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "image500x500": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

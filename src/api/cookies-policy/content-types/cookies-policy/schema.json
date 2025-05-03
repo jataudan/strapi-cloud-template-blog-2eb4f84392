@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cookies-policy",
     "pluralName": "cookies-policies",
-    "displayName": "Cookies Policy"
+    "displayName": "Cookies Policy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,19 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "image500x500": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
