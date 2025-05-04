@@ -599,6 +599,7 @@ export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text;
+    highlighted: Schema.Attribute.String;
     image453x349: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -606,8 +607,10 @@ export interface ApiContactUsContactUs extends Struct.SingleTypeSchema {
       'api::contact-us.contact-us'
     > &
       Schema.Attribute.Private;
+    prefix: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
+    suffix: Schema.Attribute.String;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -632,6 +635,7 @@ export interface ApiCookiesPolicyCookiesPolicy extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
     heading: Schema.Attribute.String;
     highlighted: Schema.Attribute.String;
     image500x500: Schema.Attribute.Media<'images'>;
@@ -845,6 +849,7 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     highlighted: Schema.Attribute.String;
     image500x500: Schema.Attribute.Media<'images'>;
@@ -1019,6 +1024,7 @@ export interface ApiTermsAndConditionTermsAndCondition
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    description: Schema.Attribute.String;
     heading: Schema.Attribute.String;
     highlighted: Schema.Attribute.String;
     image500x500: Schema.Attribute.Media<'images'>;

@@ -39,6 +39,9 @@
     },
     "highlighted": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

@@ -43,6 +43,15 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "highlighted": {
+      "type": "string"
     }
   }
 }
