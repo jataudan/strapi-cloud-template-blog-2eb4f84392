@@ -849,7 +849,7 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     heading: Schema.Attribute.String;
     highlighted: Schema.Attribute.String;
     image500x500: Schema.Attribute.Media<'images'>;
@@ -1024,7 +1024,7 @@ export interface ApiTermsAndConditionTermsAndCondition
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     heading: Schema.Attribute.String;
     highlighted: Schema.Attribute.String;
     image500x500: Schema.Attribute.Media<'images'>;
