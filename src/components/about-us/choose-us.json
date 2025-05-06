@@ -9,7 +9,7 @@
     "heading": {
       "type": "string"
     },
-    "paragraph": {
+    "firstParagraph": {
       "type": "text"
     },
     "benefits": {
@@ -45,6 +45,9 @@
     },
     "title": {
       "type": "string"
+    },
+    "secondParagraph": {
+      "type": "text"
     }
   }
 }
