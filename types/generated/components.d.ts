@@ -38,7 +38,7 @@ export interface AboutUsChooseUs extends Struct.ComponentSchema {
     contactInfo: Schema.Attribute.Component<'about-us.contact-info', false>;
     heading: Schema.Attribute.String;
     mainImage588x583: Schema.Attribute.Media<'images'>;
-    paragraph: Schema.Attribute.Blocks;
+    paragraph: Schema.Attribute.RichText;
     title: Schema.Attribute.String;
   };
 }
