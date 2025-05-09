@@ -9,9 +9,6 @@
     "heading": {
       "type": "string"
     },
-    "firstParagraph": {
-      "type": "text"
-    },
     "benefits": {
       "displayName": "benefits",
       "type": "component",
@@ -46,10 +43,7 @@
     "title": {
       "type": "string"
     },
-    "secondParagraph": {
-      "type": "text"
-    },
-    "bulletPoints": {
+    "paragraph": {
       "type": "blocks"
     }
   }
