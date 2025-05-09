@@ -34,6 +34,7 @@ export interface AboutUsChooseUs extends Struct.ComponentSchema {
   attributes: {
     backgroundImage2074x602: Schema.Attribute.Media<'images'>;
     benefits: Schema.Attribute.Component<'about-us.benefits', true>;
+    bulletPoints: Schema.Attribute.Blocks;
     color: Schema.Attribute.String;
     contactInfo: Schema.Attribute.Component<'about-us.contact-info', false>;
     firstParagraph: Schema.Attribute.Text;

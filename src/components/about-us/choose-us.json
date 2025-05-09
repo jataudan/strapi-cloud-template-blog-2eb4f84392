@@ -48,6 +48,9 @@
     },
     "secondParagraph": {
       "type": "text"
+    },
+    "bulletPoints": {
+      "type": "blocks"
     }
   }
 }
