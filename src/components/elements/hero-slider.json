@@ -1,17 +1,31 @@
 {
   "collectionName": "components_elements_hero_sliders",
   "info": {
-    "displayName": "Hero Slider"
+    "displayName": "Hero Slider",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "sliderImages1920x1000": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "files",
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

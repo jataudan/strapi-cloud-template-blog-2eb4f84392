@@ -445,10 +445,15 @@ export interface ElementsExpertTestimonials extends Struct.ComponentSchema {
 export interface ElementsHeroSlider extends Struct.ComponentSchema {
   collectionName: 'components_elements_hero_sliders';
   info: {
+    description: '';
     displayName: 'Hero Slider';
   };
   attributes: {
+    description: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    prefix: Schema.Attribute.String;
     sliderImages1920x1000: Schema.Attribute.Media<'files' | 'images', true>;
+    suffix: Schema.Attribute.String;
   };
 }
 
@@ -807,7 +812,7 @@ export interface LandingPageHeroSection extends Struct.ComponentSchema {
     paragraph: Schema.Attribute.Text;
     primaryHeading: Schema.Attribute.String;
     secondaryHeading: Schema.Attribute.String;
-    slider: Schema.Attribute.Component<'elements.hero-slider', false>;
+    slider: Schema.Attribute.Component<'elements.hero-slider', true>;
     socialLinks: Schema.Attribute.Component<'elements.email-link', true>;
   };
 }

@@ -30,7 +30,7 @@
     },
     "slider": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "elements.hero-slider"
     }
   }
