@@ -8,7 +8,7 @@
   "attributes": {
     "sliderImages1920x1000": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "files",

@@ -452,7 +452,7 @@ export interface ElementsHeroSlider extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     heading: Schema.Attribute.String;
     prefix: Schema.Attribute.String;
-    sliderImages1920x1000: Schema.Attribute.Media<'files' | 'images', true>;
+    sliderImages1920x1000: Schema.Attribute.Media<'files' | 'images'>;
     suffix: Schema.Attribute.String;
   };
 }
