@@ -746,7 +746,7 @@ export interface LandingPageAboutUs extends Struct.ComponentSchema {
     campaigns: Schema.Attribute.String;
     campaignsText: Schema.Attribute.String;
     leftImage553x534: Schema.Attribute.Media<'images'>;
-    paragraph: Schema.Attribute.Text;
+    paragraph: Schema.Attribute.RichText;
     prefix: Schema.Attribute.String;
     primaryHighlighted: Schema.Attribute.String;
     secondaryHighlighted: Schema.Attribute.String;

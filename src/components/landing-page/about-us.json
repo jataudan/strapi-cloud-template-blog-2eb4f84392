@@ -20,9 +20,6 @@
     "primaryHighlighted": {
       "type": "string"
     },
-    "paragraph": {
-      "type": "text"
-    },
     "campaigns": {
       "type": "string"
     },
@@ -43,6 +40,9 @@
     },
     "secondaryHighlighted": {
       "type": "string"
+    },
+    "paragraph": {
+      "type": "richtext"
     }
   }
 }
