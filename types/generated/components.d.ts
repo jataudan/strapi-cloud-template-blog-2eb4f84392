@@ -794,7 +794,7 @@ export interface LandingPageDigitalAgency extends Struct.ComponentSchema {
     detail: Schema.Attribute.Component<'elements.detail', true>;
     highlighted: Schema.Attribute.String;
     image553x534: Schema.Attribute.Media<'images'>;
-    paragraph: Schema.Attribute.Text;
+    paragraph: Schema.Attribute.RichText;
     prefix: Schema.Attribute.String;
     suffix: Schema.Attribute.String;
     title: Schema.Attribute.String;

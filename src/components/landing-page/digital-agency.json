@@ -12,9 +12,6 @@
     "prefix": {
       "type": "string"
     },
-    "paragraph": {
-      "type": "text"
-    },
     "detail": {
       "displayName": "Detail",
       "type": "component",
@@ -34,6 +31,9 @@
     },
     "suffix": {
       "type": "string"
+    },
+    "paragraph": {
+      "type": "richtext"
     }
   }
 }
