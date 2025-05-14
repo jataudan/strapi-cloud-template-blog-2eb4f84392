@@ -984,11 +984,18 @@ export interface PortfolioProjectInformation extends Struct.ComponentSchema {
     budget: Schema.Attribute.Decimal;
     category: Schema.Attribute.Enumeration<
       [
-        'Building Constractions',
-        'Social Media Marketing',
-        'Email Marketing',
-        'Electrotherapy',
-        'Affiliate Marketing',
+        'Marketing',
+        'Agency',
+        'Influencer',
+        'Advertising',
+        'Development',
+        'Branding',
+        'Website Design & Development',
+        'UI & Product Design',
+        'Branding & Identity',
+        'SEO & Digital Marketing',
+        'E-commerce Solutions',
+        'Custom Web Applications',
       ]
     >;
     clientName: Schema.Attribute.String;
