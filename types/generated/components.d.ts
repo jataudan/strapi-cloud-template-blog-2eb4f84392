@@ -994,8 +994,8 @@ export interface PortfolioProjectInformation extends Struct.ComponentSchema {
         'UI & Product Design',
         'Branding & Identity',
         'SEO & Digital Marketing',
-        'E-commerce Solutions',
-        'Custom Web Applications',
+        'E-commerce Solution',
+        'Custom Web Application',
       ]
     >;
     clientName: Schema.Attribute.String;
